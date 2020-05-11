@@ -5,11 +5,9 @@
  * @since 1.0
  */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class IP extends Instance
-{
+class IP extends Instance {
 	protected static $_instance;
 
 	private $_visitor_geo_data = array();
@@ -31,8 +29,7 @@ class IP extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	public static function me()
-	{
+	public static function me() {
 		$_ip = '';
 		if ( function_exists( 'apache_request_headers' ) ) {
 			$apache_headers = apache_request_headers();
@@ -63,8 +60,7 @@ class IP extends Instance
 	 * @since 1.0
 	 * @access public
 	 */
-	public static function geo( $ip = false )
-	{
+	public static function geo( $ip = false ) {
 		if ( ! $ip ) {
 			$ip = self::me();
 		}
@@ -94,8 +90,7 @@ class IP extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	public function maybe_hit_rule( $list, $ip_only = false )
-	{
+	public function maybe_hit_rule( $list, $ip_only = false ) {
 		if ( ! $this->_visitor_geo_data ) {
 			$this->_visitor_geo_data = $ip_only ? array( 'ip' => self::me() ) : self::geo();
 		}

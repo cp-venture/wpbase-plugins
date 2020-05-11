@@ -7,8 +7,7 @@
 defined( 'WPINC' ) || exit;
 
 if ( ! function_exists( 'dologin_autoload' ) ) {
-	function dologin_autoload( $cls )
-	{
+	function dologin_autoload( $cls ) {
 		if ( strpos( $cls, 'dologin' ) !== 0 ) {
 			return;
 		}

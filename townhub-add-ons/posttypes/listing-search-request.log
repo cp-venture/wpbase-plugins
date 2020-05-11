@@ -1,0 +1,28 @@
+["request"]=>
+  string(1582) "SELECT SQL_CALC_FOUND_ROWS  wp_posts.ID FROM wp_posts  INNER JOIN wp_postmeta ON ( wp_posts.ID = wp_postmeta.post_id ) JOIN wp_icl_translations wpml_translations
+              ON wp_posts.ID = wpml_translations.element_id
+                AND wpml_translations.element_type = CONCAT('post_', wp_posts.post_type)  WHERE 1=1  AND ( 
+  ( wp_postmeta.meta_key = '_cth_listing_type_id' AND CAST(wp_postmeta.meta_value AS SIGNED) = '5064' )
+) AND wp_posts.post_type = 'listing' AND (wp_posts.post_status = 'publish') AND ( ( ( wpml_translations.language_code = 'en' OR (
+          wpml_translations.language_code = 'en'
+          AND wp_posts.post_type IN ( 'elementor_library' )
+          AND ( ( 
+      ( SELECT COUNT(element_id)
+        FROM wp_icl_translations
+        WHERE trid = wpml_translations.trid
+        AND language_code = 'en'
+      ) = 0
+       ) OR ( 
+      ( SELECT COUNT(element_id)
+        FROM wp_icl_translations t2
+        JOIN wp_posts p ON p.id = t2.element_id
+        WHERE t2.trid = wpml_translations.trid
+        AND t2.language_code = 'en'
+        AND (
+          p.post_status = 'publish' OR 
+          p.post_type='attachment' AND p.post_status = 'inherit'
+        )
+      ) = 0 ) ) 
+        ) ) AND wp_posts.post_type  IN ('post','page','attachment','wp_block','elementor_library','listing_type','listing','lplan','lorder','lbooking','lmessage','cthclaim','member','cth_testimonial' )  ) OR wp_posts.post_type  NOT  IN ('post','page','attachment','wp_block','elementor_library','listing_type','listing','lplan','lorder','lbooking','lmessage','cthclaim','member','cth_testimonial' )  ) GROUP BY wp_posts.ID ORDER BY wp_posts.post_date DESC LIMIT 0, 6"
+
+        

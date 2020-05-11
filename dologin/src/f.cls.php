@@ -5,18 +5,15 @@
 * @since 1.0
 */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class f
-{
+class f {
 	/**
 	 *	Delete folder
 	 *
 	 * @since 1.0
 	 */
-	public static function rrmdir( $dir )
-	{
+	public static function rrmdir( $dir ) {
 		$files = array_diff( scandir( $dir ), array( '.', '..' ) );
 
 		foreach ( $files as $file ) {
@@ -26,8 +23,7 @@ class f
 		return rmdir( $dir );
 	}
 
-	public static function count_lines($filename)
-	{
+	public static function count_lines($filename) {
 		if ( ! file_exists($filename) ) {
 			return 0;
 		}
@@ -42,8 +38,7 @@ class f
 	 *
 	 * @since 1.0
 	 */
-	public static function read( $filename, $start_line = null, $lines = null )
-	{
+	public static function read( $filename, $start_line = null, $lines = null ) {
 		if ( ! file_exists( $filename ) ) {
 			return '';
 		}
@@ -90,8 +85,7 @@ class f
 	 * @since 1.0
 	 * @access public
 	 */
-	public static function append( $filename, $data, $mkdir = false, $silence = true )
-	{
+	public static function append( $filename, $data, $mkdir = false, $silence = true ) {
 		return self::save( $filename, $data, $mkdir, true, $silence );
 	}
 
@@ -100,8 +94,7 @@ class f
 	 *
 	 * @since 1.0
 	 */
-	public static function save( $filename, $data, $mkdir = false, $append = false, $silence = true )
-	{
+	public static function save( $filename, $data, $mkdir = false, $append = false, $silence = true ) {
 		$error = false;
 		$folder = dirname( $filename );
 
@@ -149,8 +142,7 @@ class f
 	 *
 	 * @since 1.0
 	 */
-	public static function remove_zero_space( $content )
-	{
+	public static function remove_zero_space( $content ) {
 		if ( is_array( $content ) ) {
 			$content = array_map( __CLASS__ . '::remove_zero_space', $content );
 			return $content;

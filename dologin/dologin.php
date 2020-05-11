@@ -2,10 +2,10 @@
 /**
  * Plugin Name:       DoLogin Security
  * Description:       Passwordless login. Free text SMS code for 2nd step verification login. GeoLocation (Continent/Country/City) or IP range to limit login attempts. Support Whitelist and Blacklist. Support WooCommerce. Login attempt limit. CLI supported for generating passwordless login.
- * Version:           2.5
+ * Version:           2.6
  * Author:            WPDO
  * WC requires at least: 1.0.0
- * WC tested up to:   4.0.1
+ * WC tested up to:   4.1.0
  * License:           GPLv3
  * License URI:       http://www.gnu.org/licenses/gpl.html
  * Text Domain:       dologin
@@ -33,7 +33,7 @@ if ( defined( 'DOLOGIN_V' ) ) {
 	return;
 }
 
-define( 'DOLOGIN_V', '2.5' );
+define( 'DOLOGIN_V', '2.6' );
 
 ! defined( 'DOLOGIN_DIR' ) && define( 'DOLOGIN_DIR', dirname( __FILE__ ) . '/' );// Full absolute path '/usr/local/***/wp-content/plugins/dologin/' or MU
 ! defined( 'DOLOGIN_PLUGIN_URL' ) && define( 'DOLOGIN_PLUGIN_URL', plugin_dir_url( __FILE__ ) ) ;// Full URL path '//example.com/wp-content/plugins/dologin/'
@@ -55,8 +55,7 @@ if ( ( defined( 'WP_CLI' ) && WP_CLI ) || PHP_SAPI == 'cli' ) {
  * @since  1.4.1
  */
 if ( ! function_exists( 'dologin_gen_link' ) ) {
-	function dologin_gen_link( $src, $uid = false )
-	{
+	function dologin_gen_link( $src, $uid = false ) {
 		if ( ! $uid ) {
 			$user = wp_get_current_user();
 		}

@@ -5,22 +5,18 @@
  * @since  1.3
  */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class s
-{
+class s {
 	//xml load sanitize
-	public static function sanitizeXml( $content )
-	{
+	public static function sanitizeXml( $content ) {
 	  if (!$content) return '';
 	  $invalid_characters = '/[^\x9\xa\x20-\xD7FF\xE000-\xFFFD]/';
 	  return preg_replace($invalid_characters, '', $content);
 	}
 
 	//id2shortURL
-	public static function num2code($id)
-	{
+	public static function num2code( $id ) {
 		global $_charArr, $_len;
 		if(!$_charArr) {
 			$_charArr = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -30,8 +26,8 @@ class s
 		$url .= $_charArr[$id%$_len];
 		return $url;
 	}
-	public static function code2num($url)
-	{
+
+	public static function code2num( $url ) {
 		global $_charArr, $_len;
 		if(!$_charArr) {
 			$_charArr = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -43,8 +39,7 @@ class s
 	}
 
 	//parse bbcode
-	public static function bbcode($str)
-	{
+	public static function bbcode( $str ) {
 		$search = array (
 			"~\[ul\]~",
 			"~\[ol\]~",
@@ -113,8 +108,7 @@ class s
 	 *	XML parser
 	 *
 	 */
-	public static function xml2arr($xml)
-	{
+	public static function xml2arr($xml) {
 		$values = array();
 		$index  = array();
 		$array  = array();
@@ -130,8 +124,7 @@ class s
 		return $array;
 	}
 
-	private static function _xml2arr($values, &$i)
-	{
+	private static function _xml2arr($values, &$i) {
 		$child = array();
 		if(isset($values[$i]['value'])) array_push($child, $values[$i]['value']);
 		while ($i++ < count($values)){
@@ -168,8 +161,7 @@ class s
 	 *	code convert
 	 *
 	 */
-	public static function conv($text, $from = 'utf-8', $to = 'gbk')
-	{
+	public static function conv($text, $from = 'utf-8', $to = 'gbk') {
 		if(is_array($text)) foreach($text as $key => $val) $text[$key] = self::conv($val, $from, $to);
 		else $text = mb_convert_encoding($text, $to, $from);
 		return $text;
@@ -179,8 +171,7 @@ class s
 	 *	sub str
 	 *
 	 */
-	public static function rsubstr($string, $len, $add = 0)
-	{
+	public static function rsubstr($string, $len, $add = 0) {
 		$str2 = mb_substr($string, 0, $len, 'utf-8');
 		if($add != 0) $add ++;
 		if(strlen($str2) < strlen($string) && $add != 0) {
@@ -195,8 +186,7 @@ class s
 	 *	strlen
 	 *
 	 */
-	public static function len($string, $charNum = 0)
-	{
+	public static function len($string, $charNum = 0) {
 		if(!$charNum) return strlen(self::conv($string));
 		return mb_strlen($string, 'utf-8');
 	}
@@ -205,8 +195,7 @@ class s
 	 *	br
 	 *
 	 */
-	public static function htmlBr( $string )
-	{
+	public static function htmlBr( $string ) {
 		if(is_array($string)) foreach($string as $k => $v) $string[$k] = self::htmlBr($v);
 		else $string = str_replace(array('  ', "\r"."\n", "\n", "\t"), array('&nbsp;&nbsp;', '<br />', '<br />', '&nbsp;&nbsp;&nbsp;&nbsp;'), $string);
 		return $string;
@@ -216,8 +205,7 @@ class s
 	 *	HTML
 	 *
 	 */
-	public static function html( $string, $showBr = true, $noConv = array() )
-	{
+	public static function html( $string, $showBr = true, $noConv = array() ) {
 		if(!$string) return $string;
 		if(!is_array($noConv)) $noConv = array($noConv);
 		if(is_array($string)){
@@ -235,8 +223,7 @@ class s
 	 *	convert str to color
 	 *
 	 */
-	public static function color( $str, $returnColor = false )
-	{
+	public static function color( $str, $returnColor = false ) {
 		global $_color;
 		if(!$str) return false;
 		if(!$_color) $_color = self::colorArr2();//90
@@ -249,8 +236,7 @@ class s
 	/**
 	 *	Random
 	 */
-	public static function rrand( $len, $type = 7 )
-	{
+	public static function rrand( $len, $type = 7 ) {
 		mt_srand( ( double ) microtime() * 1000000 );
 
 		switch( $type ) {
@@ -305,8 +291,7 @@ class s
 	 *
 	 */
 	const METHOD = 'aes-256-cbc';
-	public static function encrypt($str)
-	{
+	public static function encrypt($str) {
 		global $__hash;
 		$key = substr(hash('sha256', $__hash), 0, 32);
 		$ivsize = openssl_cipher_iv_length(self::METHOD);
@@ -321,8 +306,7 @@ class s
 		return base64_encode($iv.$str_encrypt);
 	}
 
-	public static function decrypt($str)
-	{
+	public static function decrypt($str) {
 		global $__hash;
 		$str = base64_decode($str);
 		$key = substr(hash('sha256', $__hash), 0, 32);
@@ -347,8 +331,7 @@ class s
 	/**
 	 * Convert array to safe url
 	 */
-	public static function arr2url_encrypt( $arr )
-	{
+	public static function arr2url_encrypt( $arr ) {
 		return urlencode( self::encrypt( arr2str( $arr ) ) );
 	}
 
@@ -356,8 +339,7 @@ class s
 	 *	seeable color
 	 *
 	 */
-	private static function colorArr2()
-	{
+	private static function colorArr2() {
 		return array(
 			'#000000',
 			'#38B0DE',
@@ -440,8 +422,7 @@ class s
 	 *	seeable color
 	 *
 	 */
-	private static function colorArr()
-	{
+	private static function colorArr() {
 		return array(
 			array( 'color' => '255 0 0',     'hexcolor' => '#FF0000' ),
 			array( 'color' => '0 255 0',     'hexcolor' => '#00FF00' ),

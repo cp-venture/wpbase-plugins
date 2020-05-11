@@ -5,11 +5,9 @@
  * @since 1.0
  */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class Admin extends Instance
-{
+class Admin extends Instance {
 	protected static $_instance;
 
 	/**
@@ -18,8 +16,7 @@ class Admin extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	public function init()
-	{
+	public function init() {
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 		add_filter( 'plugin_action_links_dologin/dologin.php', array( $this, 'add_plugin_links' ) );
 		add_action( 'admin_init', array( $this, 'admin_init' ) );
@@ -34,8 +31,7 @@ class Admin extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	public function admin_menu()
-	{
+	public function admin_menu() {
 		add_options_page( 'DoLogin Security', 'DoLogin Security', 'manage_options', 'dologin', array( $this, 'setting_page' ) );
 	}
 
@@ -45,8 +41,7 @@ class Admin extends Instance
 	 * @since  1.2.2
 	 * @access public
 	 */
-	public function admin_init()
-	{
+	public function admin_init() {
 		if ( get_transient( 'dologin_activation_redirect' ) ) {
 			delete_transient( 'dologin_activation_redirect' );
 			if ( ! is_network_admin() && ! isset( $_GET['activate-multi'] ) ) {
@@ -65,24 +60,21 @@ class Admin extends Instance
 	 *
 	 * @since  1.3
 	 */
-	public function user_contactmethods( $contactmethods )
-	{
+	public function user_contactmethods( $contactmethods ) {
 		if ( ! array_key_exists( 'phone_number', $contactmethods ) ) {
 			$contactmethods[ 'phone_number' ] = __( 'Dologin Security Phone', 'dologin' );
 		}
 		return $contactmethods;
 	}
 
-	public function manage_users_columns( $column )
-	{
+	public function manage_users_columns( $column ) {
 		if ( ! array_key_exists( 'phone_number', $column ) ) {
 			$column[ 'phone_number' ] = __( 'Dologin Security Phone', 'dologin' );
 		}
 		return $column;
 	}
 
-	public function manage_users_custom_column( $val, $column_name, $user_id )
-	{
+	public function manage_users_custom_column( $val, $column_name, $user_id ) {
 		if ( $column_name == 'phone_number' ) {
 			$val = substr( get_the_author_meta( 'phone_number', $user_id ), -4 );
 			if ( $val ) {
@@ -104,8 +96,7 @@ class Admin extends Instance
 	 * @since  1.1
 	 * @access public
 	 */
-	public function add_plugin_links( $links )
-	{
+	public function add_plugin_links( $links ) {
 		$links[] = '<a href="' . menu_page_url( 'dologin', 0 ) . '">' . __( 'Settings', 'dologin' ) . '</a>';
 
 		return $links;
@@ -117,8 +108,7 @@ class Admin extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	public function setting_page()
-	{
+	public function setting_page() {
 		Data::get_instance()->tb_create( 'failure' );
 		Data::get_instance()->tb_create( 'sms' );
 		Data::get_instance()->tb_create( 'pswdless' );
@@ -157,8 +147,7 @@ class Admin extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	private function _sanitize_list( $list )
-	{
+	private function _sanitize_list( $list ) {
 		if ( ! is_array( $list ) ) {
 			$list = explode( "\n", trim( $list ) );
 		}
@@ -176,8 +165,7 @@ class Admin extends Instance
 	 * @since  1.4
 	 * @access public
 	 */
-	public function pswdless_log()
-	{
+	public function pswdless_log() {
 		global $wpdb;
 
 		$list = $wpdb->get_results( 'SELECT * FROM ' . Data::get_instance()->tb( 'pswdless' ) . ' ORDER BY id DESC' );
@@ -196,8 +184,7 @@ class Admin extends Instance
 	 * @since  1.3
 	 * @access public
 	 */
-	public function sms_log()
-	{
+	public function sms_log() {
 		global $wpdb;
 		return $wpdb->get_results( 'SELECT * FROM ' . Data::get_instance()->tb( 'sms' ) . ' ORDER BY id DESC LIMIT 10' );
 	}
@@ -208,8 +195,7 @@ class Admin extends Instance
 	 * @since  1.1
 	 * @access public
 	 */
-	public function log()
-	{
+	public function log() {
 		global $wpdb;
 		return $wpdb->get_results( 'SELECT * FROM ' . Data::get_instance()->tb( 'failure' ) . ' ORDER BY id DESC LIMIT 10' );
 	}

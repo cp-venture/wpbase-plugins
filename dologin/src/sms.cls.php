@@ -5,11 +5,9 @@
  * @since 1.3
  */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class SMS extends Instance
-{
+class SMS extends Instance {
 	protected static $_instance;
 
 	private $_dry_run = false;
@@ -19,8 +17,7 @@ class SMS extends Instance
 	 *
 	 * @since 1.3
 	 */
-	public function current_user_phone()
-	{
+	public function current_user_phone() {
 		$uid = get_current_user_id();
 		$phone = get_user_meta( $uid, 'phone_number', true );
 		return $phone;
@@ -31,8 +28,7 @@ class SMS extends Instance
 	 *
 	 * @since  1.6
 	 */
-	public static function is_dry_run()
-	{
+	public static function is_dry_run() {
 		return self::get_instance()->_dry_run;
 	}
 
@@ -41,8 +37,7 @@ class SMS extends Instance
 	 *
 	 * @since  1.3
 	 */
-	public function authenticate( $user, $username, $password )
-	{
+	public function authenticate( $user, $username, $password ) {
 		global $wpdb;
 
 		defined( 'debug' ) && debug( 'auth' );
@@ -108,8 +103,7 @@ class SMS extends Instance
 	 *
 	 * @since  1.3
 	 */
-	public function test_send()
-	{
+	public function test_send() {
 		global $wpdb;
 		if ( empty( $_POST[ 'phone' ] ) ) {
 			return REST::err( Lang::msg( 'not_phone_set_curr' ) );
@@ -140,8 +134,7 @@ class SMS extends Instance
 	 *
 	 * @since  1.3
 	 */
-	public function send()
-	{
+	public function send() {
 		global $wpdb;
 
 		if ( ! Conf::val( 'sms' ) ) {
@@ -230,8 +223,7 @@ class SMS extends Instance
 	 *
 	 * @since  1.5
 	 */
-	private function _api( $phone, $content )
-	{
+	private function _api( $phone, $content ) {
 		$app = 'wp-' . home_url();
 
 		// Send

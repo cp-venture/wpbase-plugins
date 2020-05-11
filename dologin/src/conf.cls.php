@@ -5,11 +5,9 @@
  * @since 1.0
  */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class Conf extends Instance
-{
+class Conf extends Instance {
 	protected static $_instance;
 
 	private $_options = array();
@@ -31,8 +29,7 @@ class Conf extends Instance
 		'blacklist'			=> array(),
 	);
 
-	protected function __construct()
-	{
+	protected function __construct() {
 	}
 
 	/**
@@ -41,8 +38,7 @@ class Conf extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	public function init()
-	{
+	public function init() {
 		// Load all options
 		$options = array();
 		foreach ( self::$_default_options as $k => $v ) {
@@ -77,8 +73,7 @@ class Conf extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	public static function val( $id )
-	{
+	public static function val( $id ) {
 		$instance = self::get_instance();
 		if ( isset( $instance->_options[ $id ] ) ) {
 			return $instance->_options[ $id ];
@@ -93,8 +88,7 @@ class Conf extends Instance
 	 * @since  1.1
 	 * @access private
 	 */
-	public function get_options()
-	{
+	public function get_options() {
 		return $this->_options;
 	}
 
@@ -104,8 +98,7 @@ class Conf extends Instance
 	 * @since  1.4.1
 	 * @access public
 	 */
-	public static function add( $id, $v )
-	{
+	public static function add( $id, $v ) {
 		add_option( 'dologin.' . $id, $v );
 	}
 
@@ -115,8 +108,7 @@ class Conf extends Instance
 	 * @since  1.4.1
 	 * @access public
 	 */
-	public static function delete( $id )
-	{
+	public static function delete( $id ) {
 		delete_option( 'dologin.' . $id );
 	}
 
@@ -126,8 +118,7 @@ class Conf extends Instance
 	 * @since  1.0
 	 * @access private
 	 */
-	private function _get_option( $id, $default_v = false )
-	{
+	private function _get_option( $id, $default_v = false ) {
 		return get_option( 'dologin.' . $id, $default_v );
 	}
 
@@ -137,8 +128,7 @@ class Conf extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	public static function update( $id, $data )
-	{
+	public static function update( $id, $data ) {
 		if ( ! array_key_exists( $id, self::$_default_options ) ) {
 			return;
 		}

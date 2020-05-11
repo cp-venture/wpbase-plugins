@@ -5,11 +5,9 @@
  * @since 1.0
  */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class Core extends Instance
-{
+class Core extends Instance {
 	protected static $_instance;
 
 	const VER = DOLOGIN_V;
@@ -20,8 +18,7 @@ class Core extends Instance
 	 * @since  1.0
 	 * @access protected
 	 */
-	protected function __construct()
-	{
+	protected function __construct() {
 		defined( 'debug' ) && debug2( 'init' );
 
 		Conf::get_instance()->init();

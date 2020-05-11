@@ -7,10 +7,8 @@ use WP_CLI;
 /**
  * Passwordless API CLI
  */
-class CLI
-{
-	public function __construct()
-	{
+class CLI {
+	public function __construct() {
 		defined( 'debug' ) && debug( 'CLI init' );
 	}
 
@@ -25,8 +23,7 @@ class CLI
 	 *     $ wp dologin list
 	 *
 	 */
-	public function list()
-	{
+	public function list() {
 		$list = Admin::get_instance()->pswdless_log();
 		foreach ( $list as $k => $v ) {
 			$list[ $k ] = (array) $v;
@@ -51,8 +48,7 @@ class CLI
 	 *     $ wp dologin gen root
 	 *
 	 */
-	public function gen( $args )
-	{
+	public function gen( $args ) {
 		$uname = $args[ 0 ];
 		$user = get_user_by( 'login', $uname );
 		if ( ! $user ) {
@@ -75,8 +71,7 @@ class CLI
 	 *     $ wp dologin del 5
 	 *
 	 */
-	public function del( $args )
-	{
+	public function del( $args ) {
 		$id = $args[ 0 ];
 		if ( ! $id ) {
 			WP_CLI::error( __( 'No ID to delete.', 'dologin' ) );

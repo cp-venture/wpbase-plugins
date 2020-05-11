@@ -1,0 +1,33 @@
+
+SELECT meta_key, meta_value, (CASE
+    WHEN meta_value = 'openAllDay'   THEN 'YES'
+    WHEN meta_value = 'closeAllDay'   THEN 'NO'
+    WHEN meta_value = 'enterHours'   THEN 
+         (SELECT (CASE
+            WHEN TRIM(meta_value)!='' THEN 
+                (
+                    CASE (
+                            SELECT ROUND (   
+                                (
+                                    LENGTH(TRIM(meta_value))
+                                    - LENGTH( REPLACE ( TRIM(meta_value), " ", "") ) 
+                                ) / LENGTH(" ")        
+                            ) 
+                        )
+                        WHEN 0 THEN (
+                            IF( ( CAST(SUBSTRING_INDEX(TRIM(meta_value), '-', 1) AS TIME) <= CAST(DATE_FORMAT(NOW(), "%H:%i") AS TIME) AND CAST(SUBSTRING_INDEX(TRIM(meta_value), '-', -1) AS TIME) >= CAST(DATE_FORMAT(NOW(), "%H:%i") AS TIME) )
+                                ,'Open', DATE_FORMAT(NOW(), "%H:%i") )
+                            
+                            )
+                        WHEN 1 THEN (
+                            (SELECT SUBSTRING_INDEX(TRIM(meta_value), ' ', 1) AS fname)
+                            )
+                        ELSE 'else'
+                    END
+                )
+            ELSE 'NO'
+          END) FROM wp_postmeta WHERE post_id = 6161 AND meta_key = (REPLACE("_cth_wkh_hours_WKDAY", "WKDAY", DAYNAME(CURDATE()))) )
+    ELSE 'NO'
+END) AS is_open
+
+FROM wp_postmeta WHERE post_id = 6161 AND meta_key = (REPLACE("_cth_wkh_status_WKDAY", "WKDAY", DAYNAME(CURDATE())))

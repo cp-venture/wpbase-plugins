@@ -5,11 +5,9 @@
  * @since 1.0
  */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class REST extends Instance
-{
+class REST extends Instance {
 	protected static $_instance;
 
 	/**
@@ -18,8 +16,7 @@ class REST extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	public function init()
-	{
+	public function init() {
 		add_action( 'rest_api_init', array( $this, 'rest_api_init' ) );
 	}
 
@@ -29,8 +26,7 @@ class REST extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	public function rest_api_init()
-	{
+	public function rest_api_init() {
 		register_rest_route( 'dologin/v1', '/myip', array(
 			'methods' => 'GET',
 			'callback' => __CLASS__ . '::geoip',
@@ -50,32 +46,28 @@ class REST extends Instance
 	/**
 	 * Get GeoIP info
 	 */
-	public static function geoip()
-	{
+	public static function geoip() {
 		return IP::geo();
 	}
 
 	/**
 	 * Send SMS
 	 */
-	public static function sms()
-	{
+	public static function sms() {
 		return SMS::get_instance()->send();
 	}
 
 	/**
 	 * Send test SMS
 	 */
-	public static function test_sms()
-	{
+	public static function test_sms() {
 		return SMS::get_instance()->test_send();
 	}
 
 	/**
 	 * Return content
 	 */
-	public static function ok( $data )
-	{
+	public static function ok( $data ) {
 		$data[ '_res' ] = 'ok';
 		return $data;
 	}
@@ -83,8 +75,7 @@ class REST extends Instance
 	/**
 	 * Return error
 	 */
-	public static function err( $msg )
-	{
+	public static function err( $msg ) {
 		defined( 'debug' ) && debug( '❌ [err] ' . $msg );
 		return array( '_res' => 'err', '_msg' => $msg );
 	}

@@ -5,11 +5,9 @@
  * @since 1.6
  */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class Captcha extends Instance
-{
+class Captcha extends Instance {
 	protected static $_instance;
 
 	/**
@@ -17,8 +15,7 @@ class Captcha extends Instance
 	 *
 	 * @since  1.6
 	 */
-	public function show()
-	{
+	public function show() {
 		wp_register_script( 'dologin_google_api', 'https://www.google.com/recaptcha/api.js', array(), null );
 		wp_enqueue_script( 'dologin_google_api' );
 
@@ -30,8 +27,7 @@ class Captcha extends Instance
 	 *
 	 * @since  1.6
 	 */
-	public function authenticate()
-	{
+	public function authenticate() {
 		// Validate
 		if ( empty( $_POST[ 'g-recaptcha-response' ] ) ) {
 			throw new \Exception( 'captcha_missing' );

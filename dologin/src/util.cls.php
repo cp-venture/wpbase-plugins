@@ -5,11 +5,9 @@
  * @since 1.1
  */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class Util extends Instance
-{
+class Util extends Instance {
 	protected static $_instance;
 
 	/**
@@ -18,8 +16,7 @@ class Util extends Instance
 	 * @since 1.1
 	 * @access public
 	 */
-	public function init()
-	{
+	public function init() {
 		if ( Conf::val( 'auto_upgrade' ) ) {
 			add_filter( 'auto_update_plugin', array( $this, 'auto_update' ), 10, 2 );
 		}
@@ -31,8 +28,7 @@ class Util extends Instance
 	 * @since 1.1
 	 * @access public
 	 */
-	public function auto_update( $update, $item )
-	{
+	public function auto_update( $update, $item ) {
 		if ( $item->slug == 'dologin' ) {
 			$auto_v = self::version_check( 'auto_update_plugin' );
 
@@ -51,8 +47,7 @@ class Util extends Instance
 	 * @since  1.4
 	 * @access public
 	 */
-	public static function build_url( $action, $type = false, $is_ajax = false, $page = null, $append_arr = null )
-	{
+	public static function build_url( $action, $type = false, $is_ajax = false, $page = null, $append_arr = null ) {
 		$prefix = '?';
 
 		if ( ! $is_ajax ) {
@@ -123,8 +118,7 @@ class Util extends Instance
 	 * @since  1.2.2
 	 *
 	 */
-	public static function compatibility()
-	{
+	public static function compatibility() {
 		require_once DOLOGIN_DIR . 'lib/php-compatibility.func.php';
 	}
 
@@ -134,8 +128,7 @@ class Util extends Instance
 	 * @since  1.3
 	 * @access public
 	 */
-	public static function is_login_page()
-	{
+	public static function is_login_page() {
 		$is_login_page = in_array( $GLOBALS[ 'pagenow' ], array( 'wp-login.php', 'wp-register.php' ), true );
 
 		return apply_filters( 'dologin_is_login_page', $is_login_page );
@@ -147,8 +140,7 @@ class Util extends Instance
 	 * @since 1.1
 	 * @access public
 	 */
-	public static function version_check( $tag )
-	{
+	public static function version_check( $tag ) {
 		// Check latest stable version allowed to upgrade
 		$url = 'https://doapi.us/compatible_list/dologin?v=' . Core::VER . '&v2=' . ( defined( 'DOLOGIN_CUR_V' ) ? DOLOGIN_CUR_V : '' ) . '&src=' . $tag;
 
@@ -166,8 +158,7 @@ class Util extends Instance
 	 * @since  1.2
 	 * @access public
 	 */
-	public static function readable_time( $seconds_or_timestamp, $timeout = 3600, $backward = true )
-	{
+	public static function readable_time( $seconds_or_timestamp, $timeout = 3600, $backward = true ) {
 		if ( strlen( $seconds_or_timestamp ) == 10 ) {
 			$seconds = time() - $seconds_or_timestamp;
 			if ( $seconds > $timeout ) {
@@ -218,8 +209,7 @@ class Util extends Instance
 	 * @since  1.1
 	 * @access public
 	 */
-	public static function deactivate()
-	{
+	public static function deactivate() {
 		delete_transient( 'dologin_activation_redirect' );
 
 		self::version_check( 'deactivate' );
@@ -233,8 +223,7 @@ class Util extends Instance
 	 * @since  1.1
 	 * @access public
 	 */
-	public static function uninstall()
-	{
+	public static function uninstall() {
 		self::version_check( 'uninstall' );
 
 		Data::get_instance()->tables_del();
@@ -246,8 +235,7 @@ class Util extends Instance
 	 * @since  1.2.2
 	 * @access public
 	 */
-	public static function activate()
-	{
+	public static function activate() {
 		if ( ! defined( 'SILENCE_INSTALL' ) ) {
 			set_transient( 'dologin_activation_redirect', true, 30 );
 		}

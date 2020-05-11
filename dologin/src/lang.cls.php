@@ -5,19 +5,16 @@
  * @since 1.0
  */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class Lang extends Instance
-{
+class Lang extends Instance {
 	protected static $_instance;
 
 	/**
 	 * Init hook
 	 * @since  1.4.7
 	 */
-	public function init()
-	{
+	public function init() {
 		add_action( 'plugins_loaded', array( $this, 'plugins_loaded' ) ) ;
 	}
 
@@ -25,13 +22,11 @@ class Lang extends Instance
 	 * Plugin loaded hooks
 	 * @since 1.4.7
 	 */
-	public function plugins_loaded()
-	{
+	public function plugins_loaded() {
 		load_plugin_textdomain( 'dologin', false, 'dologin/lang/' ) ;
 	}
 
-	public static function msg( $tag, $num = null )
-	{
+	public static function msg( $tag, $num = null ) {
 		switch ( $tag ) {
 			case 'try_after' :
 				$msg = sprintf( __( 'Please try after %ds.', 'dologin' ), $num );

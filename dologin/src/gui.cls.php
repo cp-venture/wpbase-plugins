@@ -8,8 +8,7 @@ namespace dologin;
 
 defined( 'WPINC' ) || exit;
 
-class GUI extends Instance
-{
+class GUI extends Instance {
 	protected static $_instance;
 
 	/**
@@ -18,8 +17,7 @@ class GUI extends Instance
 	 * @since  1.3
 	 * @access public
 	 */
-	public function init()
-	{
+	public function init() {
 		add_action( 'login_message', array( $this, 'login_message' ) );
 
 		add_action( 'login_enqueue_scripts', array( $this, 'login_enqueue_scripts' ) );
@@ -42,8 +40,7 @@ class GUI extends Instance
 	 * @since  1.3
 	 * @access public
 	 */
-	public function login_enqueue_scripts()
-	{
+	public function login_enqueue_scripts() {
 		if ( ! Util::is_login_page() ) {
 			// return;
 		}
@@ -69,8 +66,7 @@ class GUI extends Instance
 	 *
 	 * @since 1.3
 	 */
-	public function enqueue_style()
-	{
+	public function enqueue_style() {
 		wp_enqueue_style( 'dologin', DOLOGIN_PLUGIN_URL . 'assets/login.css', array(), Core::VER, 'all');
 	}
 
@@ -79,8 +75,7 @@ class GUI extends Instance
 	 *
 	 * @since 2.0
 	 */
-	public function enqueue_admin()
-	{
+	public function enqueue_admin() {
 		// Only enqueue on dologin pages
 		if( empty( $_GET[ 'page' ] ) || strpos( $_GET[ 'page' ], 'dologin' ) !== 0 ) {
 			return;
@@ -106,8 +101,7 @@ class GUI extends Instance
 	 * @since  1.3
 	 * @access public
 	 */
-	public function login_form()
-	{
+	public function login_form() {
 		if ( Conf::val( 'sms' ) ) {
 			echo '	<p id="dologin-process">
 						Dologin Security:
@@ -131,8 +125,7 @@ class GUI extends Instance
 	 * @since  1.9
 	 * @access public
 	 */
-	public function register_form()
-	{
+	public function register_form() {
 		if ( Conf::val( 'sms_force' ) ) {
 			echo '	<p>
 						<label for="phone_number">' . __( 'Dologin Security Phone', 'dologin' ) . '</label>
@@ -152,8 +145,7 @@ class GUI extends Instance
 	 * @since  1.9
 	 * @access public
 	 */
-	public function lostpassword_form()
-	{
+	public function lostpassword_form() {
 		if ( Conf::val( 'gg' ) && Conf::val( 'recapt_forget' ) ) {
 			Captcha::get_instance()->show();
 		}
@@ -164,8 +156,7 @@ class GUI extends Instance
 	 *
 	 * @since  2.0
 	 */
-	public static function show_admin_msg( $msg )
-	{
+	public static function show_admin_msg( $msg ) {
 		$color = 'notice notice-success';
 		echo '<div class="' . $color . ' is-dismissible"><p>'. $msg . '</p></div>';
 	}
@@ -176,8 +167,7 @@ class GUI extends Instance
 	 * @since  1.1
 	 * @access public
 	 */
-	public function login_message( $msg )
-	{
+	public function login_message( $msg ) {
 		if ( defined( 'DOLOGIN_ERR' ) ) {
 			return;
 		}
@@ -193,8 +183,7 @@ class GUI extends Instance
 	 * @since  2.0
 	 * @access public
 	 */
-	public function enroll( $id )
-	{
+	public function enroll( $id ) {
 		echo '<input type="hidden" name="_settings-enroll[]" value="' . $id . '" />';
 	}
 
@@ -204,8 +193,7 @@ class GUI extends Instance
 	 * @since 2.0
 	 * @access public
 	 */
-	public function build_textarea( $id, $cols = false, $val = null )
-	{
+	public function build_textarea( $id, $cols = false, $val = null ) {
 		if ( $val === null ) {
 			$val = Conf::val( $id );
 
@@ -229,8 +217,7 @@ class GUI extends Instance
 	 * @since 2.0
 	 * @access public
 	 */
-	public function build_input( $id, $cls = null, $val = null, $type = 'text' )
-	{
+	public function build_input( $id, $cls = null, $val = null, $type = 'text' ) {
 		if ( $val === null ) {
 			$val = Conf::val( $id );
 		}
@@ -246,21 +233,27 @@ class GUI extends Instance
 		echo "<input type='$type' class='$cls' name='$id' value='" . esc_textarea( $val ) ."' id='input_$label_id' /> ";
 	}
 
-
 	/**
 	 * Build a switch div html snippet
 	 *
-	 * @since 2.0
+	 * @since 1.2
 	 * @access public
 	 */
-	public function build_switch( $id )
-	{
+	public function build_switch( $id, $title_list = false ) {
 		$this->enroll( $id );
 
 		echo '<div class="dologin-switch">';
 
-		$this->build_radio( $id, 0, null, true );
-		$this->build_radio( $id, 1, null, true );
+		if ( ! $title_list ) {
+			$title_list = array(
+				__( 'OFF', 'dologin' ),
+				__( 'ON', 'dologin' ),
+			);
+		}
+
+		foreach ( $title_list as $k => $v ) {
+			$this->_build_radio( $id, $k, $v );
+		}
 
 		echo '</div>';
 	}
@@ -268,35 +261,20 @@ class GUI extends Instance
 	/**
 	 * Build a radio input html codes and output
 	 *
-	 * @since 2.0
-	 * @access public
+	 * @since 1.2
+	 * @access private
 	 */
-	public function build_radio( $id, $val, $txt = null, $bypass_enroll = false )
-	{
-		$id_attr = 'input_radio_' . preg_replace( '|\W|', '', $id ) . '_' . $val;
-
-		if ( ! $txt ) {
-			if ( $val ) {
-				$txt = __( 'ON', 'dologin-cache' );
-			}
-			else {
-				$txt = __( 'OFF', 'dologin-cache' );
-			}
-		}
+	private function _build_radio( $id, $val, $txt ) {
+		$id_attr = 'input_radio_' . preg_replace( '|\W|', '', $id ) . '_' . $val ;
 
 		if ( ! is_string( Conf::$_default_options[ $id ] ) ) {
-			$checked = (int) Conf::val( $id ) === (int) $val ? ' checked ' : '';
+			$checked = (int) Conf::val( $id, true ) === (int) $val ? ' checked ' : '' ;
 		}
 		else {
-			$checked = Conf::val( $id ) === $val ? ' checked ' : '';
+			$checked = Conf::val( $id, true ) === $val ? ' checked ' : '' ;
 		}
 
-		if ( ! $bypass_enroll ) {
-			$this->enroll( $id );
-		}
-
-		echo "<input type='radio' autocomplete='off' name='$id' id='$id_attr' value='$val' $checked /> <label for='$id_attr'>$txt</label>";
+		echo "<input type='radio' autocomplete='off' name='$id' id='$id_attr' value='$val' $checked /> <label for='$id_attr'>$txt</label>" ;
 	}
-
 
 }

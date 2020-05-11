@@ -1,0 +1,563 @@
+//Saved shortcode
+
+[azp_row  fullwidth="1"]
+	[azp_column ]
+		[azp_lheader_bgimage ][/azp_lheader_bgimage]
+	[/azp_column]
+[/azp_row]
+[azp_row  fullwidth="1"]
+	[azp_column ]
+		[azp_lscroll_nav  contents_order="%5B%7B%22title%22%3A%22Details%22%2C%22sec_id%22%3A%22%23details%22%7D%2C%7B%22title%22%3A%22Features%22%2C%22sec_id%22%3A%22%23feature%22%7D%2C%7B%22title%22%3A%22Tags%22%2C%22sec_id%22%3A%22%23tags%22%7D%2C%7B%22title%22%3A%22Facts%22%2C%22sec_id%22%3A%22%23facts%22%7D%2C%7B%22title%22%3A%22FAQuestion%22%2C%22sec_id%22%3A%22%23faquestion%22%7D%2C%7B%22title%22%3A%22Rooms%22%2C%22sec_id%22%3A%22%23rooms%22%7D%2C%7B%22title%22%3A%22Reviews%22%2C%22sec_id%22%3A%22%23listing-reviews%22%7D%5D"][/azp_lscroll_nav]
+	[/azp_column]
+[/azp_row]
+[azp_row  column_gap="15" el_class="gray-section no-top-padding"]
+	[azp_column  azp_bwid="66" azp_rwid="d66.66"]
+		[azp_lbreadcrumbs ][/azp_lbreadcrumbs]
+		[azp_lcontent_head_info ][/azp_lcontent_head_info]
+		[azp_lcontent  el_id="details"][/azp_lcontent]
+		[azp_lfeatures  el_id="feature"][/azp_lfeatures]
+		[azp_ltags  el_id="tags"][/azp_ltags]
+		[azp_facts  el_id="facts"][/azp_facts]
+		[azp_lpromo_video  bk_img="4606"][/azp_lpromo_video]
+		[azp_lFAQuestion  el_id="faquestion"][/azp_lFAQuestion]
+		[azp_lRooms  el_id="rooms"][/azp_lRooms]
+		[azp_lcomments  el_id="comments"][/azp_lcomments]
+	[/azp_column]
+	[azp_column  azp_bwid="33" azp_rwid="d33.33"]
+		[azp_widget_booking ][/azp_widget_booking]
+		[azp_widget_contacts ][/azp_widget_contacts]
+		[azp_widget_price_range ][/azp_widget_price_range]
+		[azp_widget_weather ][/azp_widget_weather]
+		[azp_widget_author ][/azp_widget_author]
+		[azp_widget_recommended  posts_per_page="5"][/azp_widget_recommended]
+		[azp_widget_wkhour ][/azp_widget_wkhour]
+		[azp_widget_counter ][/azp_widget_counter]
+		[azp_widget_author_message ][/azp_widget_author_message]
+	[/azp_column]
+[/azp_row]
+
+// added shortcode
+[azp_row azp_mID="jy161gukp" fullwidth="1"]
+	[azp_column azp_mID="jy161gukl"]
+		[azp_lheader_bgimage azp_mID="jy161gukk"][/azp_lheader_bgimage]
+	[/azp_column]
+[/azp_row]
+[azp_row azp_mID="jy161gukg" fullwidth="1"]
+	[azp_column azp_mID="jy161gukj"][azp_column azp_mID="jy161gukl"][/azp_column][/azp_column]
+[/azp_row]
+[azp_row azp_mID="jy161guk7" column_gap="15" el_class="gray-section no-top-padding"]
+	[azp_column azp_mID="jy161gukh" azp_bwid="66" azp_rwid="d66.66"]
+		[azp_lbreadcrumbs azp_mID="jy161guk3"][/azp_lbreadcrumbs]
+		[azp_lcontent_head_info azp_mID="jy161guk1"][/azp_lcontent_head_info]
+		[azp_lcontent azp_mID="jy161guki" el_id="details"][/azp_lcontent]
+		[azp_lfeatures azp_mID="jy161guku" el_id="feature"][/azp_lfeatures]
+		[azp_ltags azp_mID="jy161gukc" el_id="tags"][/azp_ltags]
+		[azp_facts azp_mID="jy161guky" el_id="facts"][/azp_facts]
+		[azp_lpromo_video azp_mID="jy161guk8" bk_img="4606"][/azp_lpromo_video]
+		[azp_lFAQuestion azp_mID="jy161guk6" el_id="faquestion"][/azp_lFAQuestion]
+		[azp_lRooms azp_mID="jy161gukq" el_id="rooms"][/azp_lRooms]
+	[/azp_column]
+	[azp_column azp_mID="jy161gukt" azp_bwid="33" azp_rwid="d33.33"]
+		[azp_widget_booking azp_mID="jy161gukf"][/azp_widget_booking]
+		[azp_lcontent azp_mID="jy161guki" el_id="details"][/azp_lcontent]
+		[azp_lcontent_head_info azp_mID="jy161guk1"][/azp_lcontent_head_info]
+		[azp_widget_weather azp_mID="jy161gukd"][/azp_widget_weather]
+		[azp_widget_author azp_mID="jy161guke"][/azp_widget_author]
+		[azp_widget_wkhour azp_mID="jy161guk5"][/azp_widget_wkhour]
+		[azp_row azp_mID="jy161gukg" fullwidth="1"][/azp_row]
+	[/azp_column]
+[/azp_row]
+
+
+
+
+One Time Payment
+[2018-05-02 15:30 UTC] - Event type: customer.source.created
+[2018-05-02 15:30 UTC] - Event object: {"id":"card_1CNMujFZdAGAQjnSppUwIZyY","object":"card","address_city":null,"address_country":null,"address_line1":null,"address_line1_check":null,"address_line2":null,"address_state":null,"address_zip":null,"address_zip_check":null,"brand":"Visa","country":"US","customer":"cus_Cmwo1WMcXGZNDR","cvc_check":"pass","dynamic_last4":null,"exp_month":2,"exp_year":2022,"fingerprint":"IO8MFauEBQD6KZg7","funding":"credit","last4":"4242","metadata":[],"name":"test@gmail.com","tokenization_method":null}
+[2018-05-02 15:30 UTC] - Event type: customer.created
+[2018-05-02 15:30 UTC] - Event object: {"id":"cus_Cmwo1WMcXGZNDR","object":"customer","account_balance":0,"created":1525275045,"currency":null,"default_source":"card_1CNMujFZdAGAQjnSppUwIZyY","delinquent":false,"description":null,"discount":null,"email":"test@gmail.com","invoice_prefix":"BF9BF49","livemode":false,"metadata":{"first_name":"Test Recurring","display_name":"Test Recurring"},"shipping":null,"sources":{"object":"list","data":[{"id":"card_1CNMujFZdAGAQjnSppUwIZyY","object":"card","address_city":null,"address_country":null,"address_line1":null,"address_line1_check":null,"address_line2":null,"address_state":null,"address_zip":null,"address_zip_check":null,"brand":"Visa","country":"US","customer":"cus_Cmwo1WMcXGZNDR","cvc_check":"pass","dynamic_last4":null,"exp_month":2,"exp_year":2022,"fingerprint":"IO8MFauEBQD6KZg7","funding":"credit","last4":"4242","metadata":[],"name":"test@gmail.com","tokenization_method":null}],"has_more":false,"total_count":1,"url":"\/v1\/customers\/cus_Cmwo1WMcXGZNDR\/sources"},"subscriptions":{"object":"list","data":[],"has_more":false,"total_count":0,"url":"\/v1\/customers\/cus_Cmwo1WMcXGZNDR\/subscriptions"}}
+[2018-05-02 15:30 UTC] - Event type: charge.succeeded
+[2018-05-02 15:30 UTC] - Event object: {"id":"ch_1CNMuoFZdAGAQjnSpt73uyNb","object":"charge","amount":10890,"amount_refunded":0,"application":null,"application_fee":null,"balance_transaction":"txn_1CNMupFZdAGAQjnSftVn79gv","captured":true,"created":1525275046,"currency":"usd","customer":"cus_Cmwo1WMcXGZNDR","description":"Payment from test@gmail.com","destination":null,"dispute":null,"failure_code":null,"failure_message":null,"fraud_details":[],"invoice":null,"livemode":false,"metadata":{"esb_plan_id":"2319","listing_id":"0","order_id":"2542","user_id":"78","user_email":"test@gmail.com","renew":"no","subscription":"no"},"on_behalf_of":null,"order":null,"outcome":{"network_status":"approved_by_network","reason":null,"risk_level":"normal","seller_message":"Payment complete.","type":"authorized"},"paid":true,"receipt_email":"test@gmail.com","receipt_number":null,"refunded":false,"refunds":{"object":"list","data":[],"has_more":false,"total_count":0,"url":"\/v1\/charges\/ch_1CNMuoFZdAGAQjnSpt73uyNb\/refunds"},"review":null,"shipping":null,"source":{"id":"card_1CNMujFZdAGAQjnSppUwIZyY","object":"card","address_city":null,"address_country":null,"address_line1":null,"address_line1_check":null,"address_line2":null,"address_state":null,"address_zip":null,"address_zip_check":null,"brand":"Visa","country":"US","customer":"cus_Cmwo1WMcXGZNDR","cvc_check":"pass","dynamic_last4":null,"exp_month":2,"exp_year":2022,"fingerprint":"IO8MFauEBQD6KZg7","funding":"credit","last4":"4242","metadata":[],"name":"test@gmail.com","tokenization_method":null},"source_transfer":null,"statement_descriptor":null,"status":"succeeded","transfer_group":null}
+
+Plan Created
+[2018-05-03 12:02 UTC] - Event type: plan.created
+[2018-05-03 12:02 UTC] - Event object: {"id":"plan_CnGfIRIjNGHE87","object":"plan","aggregate_usage":null,"amount":5390,"billing_scheme":"per_unit","created":1525348915,"currency":"usd","interval":"month","interval_count":1,"livemode":false,"metadata":[],"name":"Basic Stripe product","nickname":"Basic","product":"prod_CnGf5R1s10ugKh","statement_descriptor":null,"tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"}
+
+
+
+Recurring Payment
+[2018-05-02 11:49 UTC] - Event type: invoice.payment_succeeded
+[2018-05-02 11:49 UTC] - Event object: {"id":"in_1CNJT1FZdAGAQjnSBlBY3Eex","object":"invoice","amount_due":1000,"amount_paid":1000,"amount_remaining":0,"application_fee":null,"attempt_count":0,"attempted":true,"billing":"charge_automatically","charge":"ch_1CNJT1FZdAGAQjnSBkJV5U5D","closed":true,"currency":"usd","customer":"cus_CmtFHqKvoOKpH2","date":1525261791,"description":null,"discount":null,"due_date":null,"ending_balance":0,"forgiven":false,"lines":{"object":"list","data":[{"id":"sub_CmtFrYKUgi3tt4","object":"line_item","amount":1000,"currency":"usd","description":null,"discountable":true,"livemode":false,"metadata":{"esb_plan_id":"2317","listing_id":"0","order_id":"2541","user_id":"78","user_email":"test@gmail.com","renew":"no","subscription":"yes"},"period":{"end":1525348191,"start":1525261791},"plan":{"id":"ctb-daily","object":"plan","aggregate_usage":null,"amount":1000,"billing_scheme":"per_unit","created":1525154642,"currency":"usd","interval":"day","interval_count":1,"livemode":false,"metadata":[],"name":"TownHub Daily","nickname":"Daily","product":"prod_CmQR85Xo3HDSbS","statement_descriptor":"Author Subscription","tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"proration":false,"quantity":1,"subscription":null,"subscription_item":"si_CmtF6XhzvqR5vB","type":"subscription"}],"has_more":false,"total_count":1,"url":"\/v1\/invoices\/in_1CNJT1FZdAGAQjnSBlBY3Eex\/lines"},"livemode":false,"metadata":[],"next_payment_attempt":null,"number":"95570F8-0001","paid":true,"period_end":1525261791,"period_start":1525261791,"receipt_number":null,"starting_balance":0,"statement_descriptor":null,"subscription":"sub_CmtFrYKUgi3tt4","subtotal":1000,"tax":null,"tax_percent":null,"total":1000,"webhooks_delivered_at":null}
+[2018-05-02 11:49 UTC] - Event type: charge.succeeded
+[2018-05-02 11:49 UTC] - Event object: {"id":"ch_1CNJT1FZdAGAQjnSBkJV5U5D","object":"charge","amount":1000,"amount_refunded":0,"application":null,"application_fee":null,"balance_transaction":"txn_1CNJT2FZdAGAQjnSCH9kcEVd","captured":true,"created":1525261791,"currency":"usd","customer":"cus_CmtFHqKvoOKpH2","description":null,"destination":null,"dispute":null,"failure_code":null,"failure_message":null,"fraud_details":[],"invoice":"in_1CNJT1FZdAGAQjnSBlBY3Eex","livemode":false,"metadata":[],"on_behalf_of":null,"order":null,"outcome":{"network_status":"approved_by_network","reason":null,"risk_level":"normal","seller_message":"Payment complete.","type":"authorized"},"paid":true,"receipt_email":"test@gmail.com","receipt_number":null,"refunded":false,"refunds":{"object":"list","data":[],"has_more":false,"total_count":0,"url":"\/v1\/charges\/ch_1CNJT1FZdAGAQjnSBkJV5U5D\/refunds"},"review":null,"shipping":null,"source":{"id":"card_1CNJSvFZdAGAQjnSLzXmqyCM","object":"card","address_city":null,"address_country":null,"address_line1":null,"address_line1_check":null,"address_line2":null,"address_state":null,"address_zip":null,"address_zip_check":null,"brand":"Visa","country":"US","customer":"cus_CmtFHqKvoOKpH2","cvc_check":"pass","dynamic_last4":null,"exp_month":2,"exp_year":2022,"fingerprint":"IO8MFauEBQD6KZg7","funding":"credit","last4":"4242","metadata":[],"name":"test@gmail.com","tokenization_method":null},"source_transfer":null,"statement_descriptor":"Author Subscription","status":"succeeded","transfer_group":null}
+[2018-05-02 11:49 UTC] - Event type: customer.updated
+[2018-05-02 11:49 UTC] - Event object: {"id":"cus_CmtFHqKvoOKpH2","object":"customer","account_balance":0,"created":1525261790,"currency":"usd","default_source":"card_1CNJSvFZdAGAQjnSLzXmqyCM","delinquent":false,"description":null,"discount":null,"email":"test@gmail.com","invoice_prefix":"95570F8","livemode":false,"metadata":{"first_name":"Test Recurring","display_name":"Test Recurring"},"shipping":null,"sources":{"object":"list","data":[{"id":"card_1CNJSvFZdAGAQjnSLzXmqyCM","object":"card","address_city":null,"address_country":null,"address_line1":null,"address_line1_check":null,"address_line2":null,"address_state":null,"address_zip":null,"address_zip_check":null,"brand":"Visa","country":"US","customer":"cus_CmtFHqKvoOKpH2","cvc_check":"pass","dynamic_last4":null,"exp_month":2,"exp_year":2022,"fingerprint":"IO8MFauEBQD6KZg7","funding":"credit","last4":"4242","metadata":[],"name":"test@gmail.com","tokenization_method":null}],"has_more":false,"total_count":1,"url":"\/v1\/customers\/cus_CmtFHqKvoOKpH2\/sources"},"subscriptions":{"object":"list","data":[{"id":"sub_CmtFrYKUgi3tt4","object":"subscription","application_fee_percent":null,"billing":"charge_automatically","billing_cycle_anchor":1525261791,"cancel_at_period_end":false,"canceled_at":null,"created":1525261791,"current_period_end":1525348191,"current_period_start":1525261791,"customer":"cus_CmtFHqKvoOKpH2","days_until_due":null,"discount":null,"ended_at":null,"items":{"object":"list","data":[{"id":"si_CmtF6XhzvqR5vB","object":"subscription_item","created":1525261792,"metadata":[],"plan":{"id":"ctb-daily","object":"plan","aggregate_usage":null,"amount":1000,"billing_scheme":"per_unit","created":1525154642,"currency":"usd","interval":"day","interval_count":1,"livemode":false,"metadata":[],"name":"TownHub Daily","nickname":"Daily","product":"prod_CmQR85Xo3HDSbS","statement_descriptor":"Author Subscription","tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"quantity":1,"subscription":"sub_CmtFrYKUgi3tt4"}],"has_more":false,"total_count":1,"url":"\/v1\/subscription_items?subscription=sub_CmtFrYKUgi3tt4"},"livemode":false,"metadata":{"esb_plan_id":"2317","listing_id":"0","order_id":"2541","user_id":"78","user_email":"test@gmail.com","renew":"no","subscription":"yes"},"plan":{"id":"ctb-daily","object":"plan","aggregate_usage":null,"amount":1000,"billing_scheme":"per_unit","created":1525154642,"currency":"usd","interval":"day","interval_count":1,"livemode":false,"metadata":[],"name":"TownHub Daily","nickname":"Daily","product":"prod_CmQR85Xo3HDSbS","statement_descriptor":"Author Subscription","tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"quantity":1,"start":1525261791,"status":"active","tax_percent":null,"trial_end":null,"trial_start":null}],"has_more":false,"total_count":1,"url":"\/v1\/customers\/cus_CmtFHqKvoOKpH2\/subscriptions"}}
+[2018-05-02 11:50 UTC] - Event type: customer.subscription.created
+[2018-05-02 11:50 UTC] - Event object: {"id":"sub_CmtFrYKUgi3tt4","object":"subscription","application_fee_percent":null,"billing":"charge_automatically","billing_cycle_anchor":1525261791,"cancel_at_period_end":false,"canceled_at":null,"created":1525261791,"current_period_end":1525348191,"current_period_start":1525261791,"customer":"cus_CmtFHqKvoOKpH2","days_until_due":null,"discount":null,"ended_at":null,"items":{"object":"list","data":[{"id":"si_CmtF6XhzvqR5vB","object":"subscription_item","created":1525261792,"metadata":[],"plan":{"id":"ctb-daily","object":"plan","aggregate_usage":null,"amount":1000,"billing_scheme":"per_unit","created":1525154642,"currency":"usd","interval":"day","interval_count":1,"livemode":false,"metadata":[],"name":"TownHub Daily","nickname":"Daily","product":"prod_CmQR85Xo3HDSbS","statement_descriptor":"Author Subscription","tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"quantity":1,"subscription":"sub_CmtFrYKUgi3tt4"}],"has_more":false,"total_count":1,"url":"\/v1\/subscription_items?subscription=sub_CmtFrYKUgi3tt4"},"livemode":false,"metadata":{"esb_plan_id":"2317","listing_id":"0","order_id":"2541","user_id":"78","user_email":"test@gmail.com","renew":"no","subscription":"yes"},"plan":{"id":"ctb-daily","object":"plan","aggregate_usage":null,"amount":1000,"billing_scheme":"per_unit","created":1525154642,"currency":"usd","interval":"day","interval_count":1,"livemode":false,"metadata":[],"name":"TownHub Daily","nickname":"Daily","product":"prod_CmQR85Xo3HDSbS","statement_descriptor":"Author Subscription","tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"quantity":1,"start":1525261791,"status":"active","tax_percent":null,"trial_end":null,"trial_start":null}
+[2018-05-02 11:50 UTC] - Event type: customer.created
+[2018-05-02 11:50 UTC] - Event object: {"id":"cus_CmtFHqKvoOKpH2","object":"customer","account_balance":0,"created":1525261790,"currency":null,"default_source":"card_1CNJSvFZdAGAQjnSLzXmqyCM","delinquent":false,"description":null,"discount":null,"email":"test@gmail.com","invoice_prefix":"95570F8","livemode":false,"metadata":{"first_name":"Test Recurring","display_name":"Test Recurring"},"shipping":null,"sources":{"object":"list","data":[{"id":"card_1CNJSvFZdAGAQjnSLzXmqyCM","object":"card","address_city":null,"address_country":null,"address_line1":null,"address_line1_check":null,"address_line2":null,"address_state":null,"address_zip":null,"address_zip_check":null,"brand":"Visa","country":"US","customer":"cus_CmtFHqKvoOKpH2","cvc_check":"pass","dynamic_last4":null,"exp_month":2,"exp_year":2022,"fingerprint":"IO8MFauEBQD6KZg7","funding":"credit","last4":"4242","metadata":[],"name":"test@gmail.com","tokenization_method":null}],"has_more":false,"total_count":1,"url":"\/v1\/customers\/cus_CmtFHqKvoOKpH2\/sources"},"subscriptions":{"object":"list","data":[],"has_more":false,"total_count":0,"url":"\/v1\/customers\/cus_CmtFHqKvoOKpH2\/subscriptions"}}
+[2018-05-02 11:50 UTC] - Event type: customer.source.created
+[2018-05-02 11:50 UTC] - Event object: {"id":"card_1CNJSvFZdAGAQjnSLzXmqyCM","object":"card","address_city":null,"address_country":null,"address_line1":null,"address_line1_check":null,"address_line2":null,"address_state":null,"address_zip":null,"address_zip_check":null,"brand":"Visa","country":"US","customer":"cus_CmtFHqKvoOKpH2","cvc_check":"pass","dynamic_last4":null,"exp_month":2,"exp_year":2022,"fingerprint":"IO8MFauEBQD6KZg7","funding":"credit","last4":"4242","metadata":[],"name":"test@gmail.com","tokenization_method":null}
+[2018-05-02 11:50 UTC] - Event type: invoice.created
+[2018-05-02 11:50 UTC] - Event object: {"id":"in_1CNJT1FZdAGAQjnSBlBY3Eex","object":"invoice","amount_due":1000,"amount_paid":1000,"amount_remaining":0,"application_fee":null,"attempt_count":0,"attempted":true,"billing":"charge_automatically","charge":"ch_1CNJT1FZdAGAQjnSBkJV5U5D","closed":true,"currency":"usd","customer":"cus_CmtFHqKvoOKpH2","date":1525261791,"description":null,"discount":null,"due_date":null,"ending_balance":0,"forgiven":false,"lines":{"object":"list","data":[{"id":"sub_CmtFrYKUgi3tt4","object":"line_item","amount":1000,"currency":"usd","description":null,"discountable":true,"livemode":false,"metadata":{"esb_plan_id":"2317","listing_id":"0","order_id":"2541","user_id":"78","user_email":"test@gmail.com","renew":"no","subscription":"yes"},"period":{"end":1525348191,"start":1525261791},"plan":{"id":"ctb-daily","object":"plan","aggregate_usage":null,"amount":1000,"billing_scheme":"per_unit","created":1525154642,"currency":"usd","interval":"day","interval_count":1,"livemode":false,"metadata":[],"name":"TownHub Daily","nickname":"Daily","product":"prod_CmQR85Xo3HDSbS","statement_descriptor":"Author Subscription","tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"proration":false,"quantity":1,"subscription":null,"subscription_item":"si_CmtF6XhzvqR5vB","type":"subscription"}],"has_more":false,"total_count":1,"url":"\/v1\/invoices\/in_1CNJT1FZdAGAQjnSBlBY3Eex\/lines"},"livemode":false,"metadata":[],"next_payment_attempt":null,"number":"95570F8-0001","paid":true,"period_end":1525261791,"period_start":1525261791,"receipt_number":null,"starting_balance":0,"statement_descriptor":null,"subscription":"sub_CmtFrYKUgi3tt4","subtotal":1000,"tax":null,"tax_percent":null,"total":1000,"webhooks_delivered_at":null}
+
+Recurring Payment - Next invoice
+[2018-05-03 16:40 UTC] - Event type: customer.subscription.updated
+[2018-05-03 16:40 UTC] - Event object: {"id":"sub_CmxwDPXamNpQie","object":"subscription","application_fee_percent":null,"billing":"charge_automatically","billing_cycle_anchor":1525279235,"cancel_at_period_end":false,"canceled_at":null,"created":1525279235,"current_period_end":1525452035,"current_period_start":1525365635,"customer":"cus_Cmxww9bRMj7xvc","days_until_due":null,"discount":null,"ended_at":null,"items":{"object":"list","data":[{"id":"si_CmxwvhHn5Gc1vO","object":"subscription_item","created":1525279235,"metadata":[],"plan":{"id":"ctb-daily","object":"plan","aggregate_usage":null,"amount":1000,"billing_scheme":"per_unit","created":1525154642,"currency":"usd","interval":"day","interval_count":1,"livemode":false,"metadata":[],"name":"TownHub Daily","nickname":"Daily","product":"prod_CmQR85Xo3HDSbS","statement_descriptor":"Author Subscription","tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"quantity":1,"subscription":"sub_CmxwDPXamNpQie"}],"has_more":false,"total_count":1,"url":"\/v1\/subscription_items?subscription=sub_CmxwDPXamNpQie"},"livemode":false,"metadata":{"esb_plan_id":"2317","listing_id":"0","order_id":"2544","user_id":"78","user_email":"test@gmail.com","renew":"no","subscription":"yes"},"plan":{"id":"ctb-daily","object":"plan","aggregate_usage":null,"amount":1000,"billing_scheme":"per_unit","created":1525154642,"currency":"usd","interval":"day","interval_count":1,"livemode":false,"metadata":[],"name":"TownHub Daily","nickname":"Daily","product":"prod_CmQR85Xo3HDSbS","statement_descriptor":"Author Subscription","tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"quantity":1,"start":1525279235,"status":"active","tax_percent":null,"trial_end":null,"trial_start":null}
+[2018-05-03 16:40 UTC] - Event type: invoice.created
+[2018-05-03 16:40 UTC] - Event object: {"id":"in_1CNkUAFZdAGAQjnS9IC0ZuWl","object":"invoice","amount_due":1000,"amount_paid":0,"amount_remaining":1000,"application_fee":null,"attempt_count":0,"attempted":false,"billing":"charge_automatically","charge":null,"closed":false,"currency":"usd","customer":"cus_Cmxww9bRMj7xvc","date":1525365650,"description":null,"discount":null,"due_date":null,"ending_balance":null,"forgiven":false,"lines":{"object":"list","data":[{"id":"sub_CmxwDPXamNpQie","object":"line_item","amount":1000,"currency":"usd","description":null,"discountable":true,"livemode":false,"metadata":{"esb_plan_id":"2317","listing_id":"0","order_id":"2544","user_id":"78","user_email":"test@gmail.com","renew":"no","subscription":"yes"},"period":{"end":1525452035,"start":1525365635},"plan":{"id":"ctb-daily","object":"plan","aggregate_usage":null,"amount":1000,"billing_scheme":"per_unit","created":1525154642,"currency":"usd","interval":"day","interval_count":1,"livemode":false,"metadata":[],"name":"TownHub Daily","nickname":"Daily","product":"prod_CmQR85Xo3HDSbS","statement_descriptor":"Author Subscription","tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"proration":false,"quantity":1,"subscription":null,"subscription_item":"si_CmxwvhHn5Gc1vO","type":"subscription"}],"has_more":false,"total_count":1,"url":"\/v1\/invoices\/in_1CNkUAFZdAGAQjnS9IC0ZuWl\/lines"},"livemode":false,"metadata":[],"next_payment_attempt":1525369250,"number":"8AD8D5A-0002","paid":false,"period_end":1525365635,"period_start":1525279235,"receipt_number":null,"starting_balance":0,"statement_descriptor":null,"subscription":"sub_CmxwDPXamNpQie","subtotal":1000,"tax":null,"tax_percent":null,"total":1000,"webhooks_delivered_at":null}
+[2018-05-03 17:41 UTC] - Event type: invoice.payment_succeeded
+[2018-05-03 17:41 UTC] - Event object: {"id":"in_1CNkUAFZdAGAQjnS9IC0ZuWl","object":"invoice","amount_due":1000,"amount_paid":1000,"amount_remaining":0,"application_fee":null,"attempt_count":1,"attempted":true,"billing":"charge_automatically","charge":"ch_1CNlQeFZdAGAQjnS5aMNhIWD","closed":true,"currency":"usd","customer":"cus_Cmxww9bRMj7xvc","date":1525365650,"description":null,"discount":null,"due_date":null,"ending_balance":0,"forgiven":false,"lines":{"object":"list","data":[{"id":"sub_CmxwDPXamNpQie","object":"line_item","amount":1000,"currency":"usd","description":null,"discountable":true,"livemode":false,"metadata":{"esb_plan_id":"2317","listing_id":"0","order_id":"2544","user_id":"78","user_email":"test@gmail.com","renew":"no","subscription":"yes"},"period":{"end":1525452035,"start":1525365635},"plan":{"id":"ctb-daily","object":"plan","aggregate_usage":null,"amount":1000,"billing_scheme":"per_unit","created":1525154642,"currency":"usd","interval":"day","interval_count":1,"livemode":false,"metadata":[],"name":"TownHub Daily","nickname":"Daily","product":"prod_CmQR85Xo3HDSbS","statement_descriptor":"Author Subscription","tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"proration":false,"quantity":1,"subscription":null,"subscription_item":"si_CmxwvhHn5Gc1vO","type":"subscription"}],"has_more":false,"total_count":1,"url":"\/v1\/invoices\/in_1CNkUAFZdAGAQjnS9IC0ZuWl\/lines"},"livemode":false,"metadata":[],"next_payment_attempt":null,"number":"8AD8D5A-0002","paid":true,"period_end":1525365635,"period_start":1525279235,"receipt_number":null,"starting_balance":0,"statement_descriptor":null,"subscription":"sub_CmxwDPXamNpQie","subtotal":1000,"tax":null,"tax_percent":null,"total":1000,"webhooks_delivered_at":1525365662}
+[2018-05-03 17:41 UTC] - Event type: invoice.updated
+[2018-05-03 17:41 UTC] - Event object: {"id":"in_1CNkUAFZdAGAQjnS9IC0ZuWl","object":"invoice","amount_due":1000,"amount_paid":1000,"amount_remaining":0,"application_fee":null,"attempt_count":1,"attempted":true,"billing":"charge_automatically","charge":"ch_1CNlQeFZdAGAQjnS5aMNhIWD","closed":true,"currency":"usd","customer":"cus_Cmxww9bRMj7xvc","date":1525365650,"description":null,"discount":null,"due_date":null,"ending_balance":0,"forgiven":false,"lines":{"object":"list","data":[{"id":"sub_CmxwDPXamNpQie","object":"line_item","amount":1000,"currency":"usd","description":null,"discountable":true,"livemode":false,"metadata":{"esb_plan_id":"2317","listing_id":"0","order_id":"2544","user_id":"78","user_email":"test@gmail.com","renew":"no","subscription":"yes"},"period":{"end":1525452035,"start":1525365635},"plan":{"id":"ctb-daily","object":"plan","aggregate_usage":null,"amount":1000,"billing_scheme":"per_unit","created":1525154642,"currency":"usd","interval":"day","interval_count":1,"livemode":false,"metadata":[],"name":"TownHub Daily","nickname":"Daily","product":"prod_CmQR85Xo3HDSbS","statement_descriptor":"Author Subscription","tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"proration":false,"quantity":1,"subscription":null,"subscription_item":"si_CmxwvhHn5Gc1vO","type":"subscription"}],"has_more":false,"total_count":1,"url":"\/v1\/invoices\/in_1CNkUAFZdAGAQjnS9IC0ZuWl\/lines"},"livemode":false,"metadata":[],"next_payment_attempt":null,"number":"8AD8D5A-0002","paid":true,"period_end":1525365635,"period_start":1525279235,"receipt_number":null,"starting_balance":0,"statement_descriptor":null,"subscription":"sub_CmxwDPXamNpQie","subtotal":1000,"tax":null,"tax_percent":null,"total":1000,"webhooks_delivered_at":1525365662}
+[2018-05-03 17:41 UTC] - Event type: charge.succeeded
+[2018-05-03 17:41 UTC] - Event object: {"id":"ch_1CNlQeFZdAGAQjnS5aMNhIWD","object":"charge","amount":1000,"amount_refunded":0,"application":null,"application_fee":null,"balance_transaction":"txn_1CNlQeFZdAGAQjnSgnoUousp","captured":true,"created":1525369276,"currency":"usd","customer":"cus_Cmxww9bRMj7xvc","description":null,"destination":null,"dispute":null,"failure_code":null,"failure_message":null,"fraud_details":[],"invoice":"in_1CNkUAFZdAGAQjnS9IC0ZuWl","livemode":false,"metadata":[],"on_behalf_of":null,"order":null,"outcome":{"network_status":"approved_by_network","reason":null,"risk_level":"normal","seller_message":"Payment complete.","type":"authorized"},"paid":true,"receipt_email":"test@gmail.com","receipt_number":null,"refunded":false,"refunds":{"object":"list","data":[],"has_more":false,"total_count":0,"url":"\/v1\/charges\/ch_1CNlQeFZdAGAQjnS5aMNhIWD\/refunds"},"review":null,"shipping":null,"source":{"id":"card_1CNO0HFZdAGAQjnSQ2tx36IM","object":"card","address_city":null,"address_country":null,"address_line1":null,"address_line1_check":null,"address_line2":null,"address_state":null,"address_zip":null,"address_zip_check":null,"brand":"Visa","country":"US","customer":"cus_Cmxww9bRMj7xvc","cvc_check":null,"dynamic_last4":null,"exp_month":2,"exp_year":2022,"fingerprint":"IO8MFauEBQD6KZg7","funding":"credit","last4":"4242","metadata":[],"name":"test@gmail.com","tokenization_method":null},"source_transfer":null,"statement_descriptor":"Author Subscription","status":"succeeded","transfer_group":null}
+
+
+Paypal recurring - trialling IPN
+
+[05/31/2018 10:37 AM] - SUCCESS!
+IPN POST Vars from Paypal:
+txn_type=subscr_signup
+subscr_id=I-W01Y0E39KJRD
+last_name=Buyer
+residence_country=US
+mc_currency=USD
+item_name=Payment+for+Recurring+-+Trial+subscription+plan
+amount1=0.00
+business=cththemespp-facilitator%40gmail.com
+amount3=11.00
+recurring=1
+verify_sign=AxpYDfrZEOWfawzZkLN7tKCy.BvJAdCa5aVUsbpBD3I0kjV-t6U-0KlC
+payer_status=verified
+test_ipn=1
+payer_email=cththemespp-buyer%40gmail.com
+first_name=Test
+receiver_email=cththemespp-facilitator%40gmail.com
+payer_id=WJ7B29UEC53XU
+invoice=invoice5b0fd0115cf81
+reattempt=1
+item_number=2317
+subscr_date=03%3A36%3A47+May+31%2C+2018+PDT
+custom=2704%7C0%7C1%7Ccontact.cththemes%40gmail.com%7Crenew_no%7Csubscription_yes
+charset=windows-1252
+notify_version=3.9
+period1=1+D
+mc_amount1=0.00
+period3=1+M
+mc_amount3=11.00
+ipn_track_id=2440f116b008e
+
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Date: Thu, 31 May 2018 10:37:07 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=6c-i6UuYau4m6mNgtL-pZchpb3L6kxT1VD_rv8VJDjV18lkhcC2IQ45hv2wxXj4xJgCAADljvXQ4D8NdgUGPoGM4a3CtWwPJwOptedTzHIVi7znIvw4ngJZsbRUdO0lepTN_zPaBOHjhJrfpLnjQEsbeHxYqSqK5lQ1O3cUtlHS5UuTLSLwcSwWIddq0NeS5OFpqzFas_-2a-0uoDGHDGZJAd51p097PVi6ykSyf4r-MEl5rfPPS70PCSPJoAQGRkV-4FiStMUplUXTAGqsPapJLLaveOKTfRBoRzUA2TacFQMBistDCHULiguLJI2mmL31g3UDHTwC7PbDoZ_GZbqojRFOdXCc8_px2MY57aiypIH5KfBO5t6bclO6qJPuQnqJ9zdmyfbJyB9gF9COtxvd5T0cAnBZQoQMWhlW79QBL3e4aCcw-Sw8LZN4; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Sun, 28-May-2028 10:37:07 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sat, 30-May-2020 10:37:07 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1527763027351618; path=/; expires=Sat, 23-May-48 10:37:07 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 24df0c8752c9b
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1406144347%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Thu, 31 May 2018 11:07:07 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+
+// Paypal recurring - trialling IPN - next payment
+
+[06/01/2018 10:40 AM] - SUCCESS!
+IPN POST Vars from Paypal:
+transaction_subject=Payment+for+Recurring+-+Trial+subscription+plan
+payment_date=03%3A39%3A55+Jun+01%2C+2018+PDT
+txn_type=subscr_payment
+subscr_id=I-UTFRLLL1RBN0
+last_name=Buyer
+residence_country=US
+item_name=Payment+for+Recurring+-+Trial+subscription+plan
+payment_gross=11.00
+mc_currency=USD
+business=cththemespp-facilitator%40gmail.com
+payment_type=instant
+protection_eligibility=Eligible
+verify_sign=AJHMsmjLH8sYb1xbCFzzJFLwFRszADXDMCM6pKHWnffM5VE5rExIDSwq
+payer_status=verified
+test_ipn=1
+payer_email=cththemespp-buyer%40gmail.com
+txn_id=86799861FM7881837
+receiver_email=cththemespp-facilitator%40gmail.com
+first_name=Test
+invoice=invoice5b10b5555eabe
+payer_id=WJ7B29UEC53XU
+receiver_id=Q4TWE2LK79LAU
+item_number=2317
+payment_status=Completed
+payment_fee=0.62
+mc_fee=0.62
+mc_gross=11.00
+custom=2713%7C0%7C78%7Ctest%40gmail.com%7Crenew_no%7Csubscription_yes
+charset=windows-1252
+notify_version=3.9
+ipn_track_id=1d84d681b4f39
+
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Date: Fri, 01 Jun 2018 10:40:03 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=cX_PMbrQhw2OjXOdqwF49J3-OcggtJTce6iQt4wZAlvntMYufTfW34YxsUgR8X-GbyUJ39xcxfjCmsYkHATYAAuBAOCvjQ8P9D8fbLx9znlpr7QEKv_wQiMJEgu3Ky6Z0ucdOjYPW0HIUl295eCFHxQEnyHpV5-2XbmSHvrDrb7rhDoIyzURnYVki0jQ80KiTMsbpCMPgfrcHyAmOoix8j1bbAOvWHHKELBMp4zPoaC07pDSaxXF5xJoR7N_nk-a8b9Rlg3Flf28wQVnRTKCquLljWmrHAIk8R3TTfZQpDK23b8p-ofJQ-bYGgx-keVrEr6-GIqKxzOQolJx62zInqUW5oVYUmmMRWo4i8Tn5ez07u4BI8bNxZ_Zm1VlSSSXxsygT5MJDPIV54t4eO95Zixcf2XaVUgMJxbfyA0XSPWj2zdbHIpT7qHWbKG; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 29-May-2028 10:40:03 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 31-May-2020 10:40:03 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1527849603128894; path=/; expires=Sun, 24-May-48 10:40:03 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 99c034d21c828
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2200047963%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Fri, 01 Jun 2018 11:10:03 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+
+
+// paypal recurring - without trial
+
+
+[06/01/2018 2:25 AM] - SUCCESS!
+IPN POST Vars from Paypal:
+txn_type=subscr_signup
+subscr_id=I-AGKPAFAF6WX8
+last_name=Buyer
+residence_country=US
+mc_currency=USD
+item_name=Payment+for+Professional+-+Recurring+subscription+plan
+business=cththemespp-facilitator%40gmail.com
+amount3=163.90
+recurring=1
+verify_sign=A8ouwv9nDVYx3U3sUKfMnr0NCxsYAgmcQzgwbkQv24diC5DiifzY8yzi
+payer_status=verified
+test_ipn=1
+payer_email=cththemespp-buyer%40gmail.com
+first_name=Test
+receiver_email=cththemespp-facilitator%40gmail.com
+payer_id=WJ7B29UEC53XU
+invoice=invoice5b10ae4f0c33a
+reattempt=1
+item_number=2320
+subscr_date=19%3A24%3A45+May+31%2C+2018+PDT
+custom=2709%7C0%7C78%7Ctest%40gmail.com%7Crenew_no%7Csubscription_yes
+charset=windows-1252
+notify_version=3.9
+period3=1+Y
+mc_amount3=163.90
+ipn_track_id=d2ae0ab19bba7
+
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Date: Fri, 01 Jun 2018 02:25:04 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=UhkDZhdgWjHNVQqNu-T8ZEa6rNnqkuC9cSp2H6Mgpt7fSBeOy8ksB7xS7vVph0w1mo9W02ZT5TZxvpWNv8KpXDknz6R8zw7y9nmUry1yPr4YWEqvvznKSnhozTyhU_VYPdNve4iPsdsLShT5KKBzmOCozCA4wlnmKz_7iLfvEdruFsicKn6LoUn5J7lyp0dFyUOZTyvMTaAhLE-2XBtTnmWrBiP1dzXd2FU64g8wVnSyfkK8Y9G3YCp27rdFEn_SgGj8qCxhDU6bQRrLn8dBvovrcq9RbeTTshaVh3OXTBkcTkuuAtD_1MnzwHJGNPsovdw1CpWApxRc1keXgt5CWAA1DZHox9jwQH76YReEhvNfuIgfzi3nPtIhjqrQc2GzuR6AcgonxSt5wB8_6ejIL6pwqNQxtv4ZKUjVqFtg5C2GIXBpb4zqxxEDZtO; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 29-May-2028 02:25:04 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 31-May-2020 02:25:04 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1527819904201672; path=/; expires=Sun, 24-May-48 02:25:04 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: a36b23292e2ea
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D2158891099%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Fri, 01 Jun 2018 02:55:04 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+
+// paypal recurring - without trial and with trial
+
+[06/01/2018 2:52 AM] - SUCCESS!
+IPN POST Vars from Paypal:
+txn_type=subscr_signup
+subscr_id=I-VMYV496C5YAK
+last_name=Buyer
+residence_country=US
+mc_currency=USD
+item_name=Payment+for+Professional+-+Recurring+subscription+plan
+business=cththemespp-facilitator%40gmail.com
+amount3=163.90
+recurring=1
+verify_sign=AGSrnYM76KOtVHHTrka6kSyOLstsAoBAXvbkDUUkEWydADqc0ey501Y.
+payer_status=verified
+test_ipn=1
+payer_email=cththemespp-buyer%40gmail.com
+first_name=Test
+receiver_email=cththemespp-facilitator%40gmail.com
+payer_id=WJ7B29UEC53XU
+invoice=invoice5b10b4b586691
+reattempt=1
+item_number=2320
+subscr_date=19%3A51%3A58+May+31%2C+2018+PDT
+custom=2711%7C0%7C78%7Ctest%40gmail.com%7Crenew_no%7Csubscription_yes
+charset=windows-1252
+notify_version=3.9
+period3=1+Y
+mc_amount3=163.90
+ipn_track_id=d93416188b96
+
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Date: Fri, 01 Jun 2018 02:52:10 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=3ggI2EOO2Bx5oChPKqe4CnY5a_hBTDRE6lKEYtOyD3jhoWeEBZif5qRy46xjfyJ1LqS5d5vDMIC9i_SsG0W-PV3b3vTSqQRwiyIkbR-EpotXESxNDKrKMgXnpnElAtEFzvpy3Himjws1LVLq3h06m4WijmbsluFKchyrEfXvDIBNh3dOUMNOvhC7w4oPvvdyZ2KITXrhw_jzzO8mZqc36yMwWWBEvZ9pWGCP7g3y97u4v8JTwuYMH-7Btgmw4qfXDLGy4fTltbPFsIDrndwDz9g4ojZkTlcytzOIsygppvg2jYKmPPLS8SFOSzJCt_5DyoMH-_1d6g8rep8b7FPWCw0GjNrNjfLKQFn5k341PzJsfg0IpOUiq8zY3mNkMA-zTQD88JlsQi803B8aN7vnsjX6Y-9CTujzBbB2req8VfidmhExf8NWGDyGjOm; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 29-May-2028 02:52:10 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 31-May-2020 02:52:10 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1527821530201700; path=/; expires=Sun, 24-May-48 02:52:10 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 93b862a12df1b
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D3669233755%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Fri, 01 Jun 2018 03:22:10 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+New IPN POST Vars from Paypal:
+txn_type=subscr_signup
+subscr_id=I-VMYV496C5YAK
+last_name=Buyer
+residence_country=US
+mc_currency=USD
+item_name=Payment for Professional - Recurring subscription plan
+business=cththemespp-facilitator@gmail.com
+amount3=163.90
+recurring=1
+verify_sign=AGSrnYM76KOtVHHTrka6kSyOLstsAoBAXvbkDUUkEWydADqc0ey501Y.
+payer_status=verified
+test_ipn=1
+payer_email=cththemespp-buyer@gmail.com
+first_name=Test
+receiver_email=cththemespp-facilitator@gmail.com
+payer_id=WJ7B29UEC53XU
+invoice=invoice5b10b4b586691
+reattempt=1
+item_number=2320
+subscr_date=19:51:58 May 31, 2018 PDT
+custom=2711|0|78|test@gmail.com|renew_no|subscription_yes
+charset=windows-1252
+notify_version=3.9
+period3=1 Y
+mc_amount3=163.90
+ipn_track_id=d93416188b96
+
+[06/01/2018 2:53 AM] - SUCCESS!
+IPN POST Vars from Paypal:
+transaction_subject=Payment+for+Professional+-+Recurring+subscription+plan
+payment_date=19%3A52%3A02+May+31%2C+2018+PDT
+txn_type=subscr_payment
+subscr_id=I-VMYV496C5YAK
+last_name=Buyer
+residence_country=US
+item_name=Payment+for+Professional+-+Recurring+subscription+plan
+payment_gross=163.90
+mc_currency=USD
+business=cththemespp-facilitator%40gmail.com
+payment_type=instant
+protection_eligibility=Eligible
+verify_sign=A3Y1IabViDnLM.hMAUvK-kr83JP5A0CoBMQOyPIU7bAYI3OM1M.izFUp
+payer_status=verified
+test_ipn=1
+payer_email=cththemespp-buyer%40gmail.com
+txn_id=681996694D473660E
+receiver_email=cththemespp-facilitator%40gmail.com
+first_name=Test
+invoice=invoice5b10b4b586691
+payer_id=WJ7B29UEC53XU
+receiver_id=Q4TWE2LK79LAU
+item_number=2320
+payment_status=Completed
+payment_fee=5.05
+mc_fee=5.05
+mc_gross=163.90
+custom=2711%7C0%7C78%7Ctest%40gmail.com%7Crenew_no%7Csubscription_yes
+charset=windows-1252
+notify_version=3.9
+ipn_track_id=d93416188b96
+
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Date: Fri, 01 Jun 2018 02:53:05 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=yMyakShzvL_78a12EzjG_BbszHfuby-HmU5BDZc9xvhJUCriiO-4jU12SY4D0sQDWiVUc5VSa8dEy864-y23l-ycvw2Mj33ADdCQ0Q6pPA8KZYcYNf1ubQIwjABGpJPfOtlqKSXpFewlGzAEHk6gRteenTSKav1LtmnLABKUGayXO7CQdVxBRQUXSnwQPi9aoaEsiyM3Q_u02H9KK4yzM68BCU49ffixEg1ynTM-Iee0q4jeLhQgYBG6iBE1HbpLOVmQLehhcrXjLuyzjncVDzyJ6tD1V_NyvJYDCok7G9Ay2xSJrIpqUDGOR_YKlQMoaIEVHIDRX3i5HvqnIbLdhCSvpe14N4rg2qTpKR6oJ--SIs_5rZfq40zqX6nLI_jMENpR8bZBhR_H3vP6DSXcgxnhnbWNsZO_LpmsRxOCj3ZRB3KM0U5AmcXX5PK; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 29-May-2028 02:53:05 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 31-May-2020 02:53:05 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1527821585283872; path=/; expires=Sun, 24-May-48 02:53:05 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: 9f0eee6841faf
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D297078875%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Fri, 01 Jun 2018 03:23:05 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+New IPN POST Vars from Paypal:
+transaction_subject=Payment for Professional - Recurring subscription plan
+payment_date=19:52:02 May 31, 2018 PDT
+txn_type=subscr_payment
+subscr_id=I-VMYV496C5YAK
+last_name=Buyer
+residence_country=US
+item_name=Payment for Professional - Recurring subscription plan
+payment_gross=163.90
+mc_currency=USD
+business=cththemespp-facilitator@gmail.com
+payment_type=instant
+protection_eligibility=Eligible
+verify_sign=A3Y1IabViDnLM.hMAUvK-kr83JP5A0CoBMQOyPIU7bAYI3OM1M.izFUp
+payer_status=verified
+test_ipn=1
+payer_email=cththemespp-buyer@gmail.com
+txn_id=681996694D473660E
+receiver_email=cththemespp-facilitator@gmail.com
+first_name=Test
+invoice=invoice5b10b4b586691
+payer_id=WJ7B29UEC53XU
+receiver_id=Q4TWE2LK79LAU
+item_number=2320
+payment_status=Completed
+payment_fee=5.05
+mc_fee=5.05
+mc_gross=163.90
+custom=2711|0|78|test@gmail.com|renew_no|subscription_yes
+charset=windows-1252
+notify_version=3.9
+ipn_track_id=d93416188b96
+
+[06/01/2018 2:54 AM] - SUCCESS!
+IPN POST Vars from Paypal:
+txn_type=subscr_signup
+subscr_id=I-UTFRLLL1RBN0
+last_name=Buyer
+residence_country=US
+mc_currency=USD
+item_name=Payment+for+Recurring+-+Trial+subscription+plan
+amount1=0.00
+business=cththemespp-facilitator%40gmail.com
+amount3=11.00
+recurring=1
+verify_sign=AnNMT7nRteKS2auTkxdsRz9rRvvPAuHhiLzBmw6VtiyOpdQFOevAVGUj
+payer_status=verified
+test_ipn=1
+payer_email=cththemespp-buyer%40gmail.com
+first_name=Test
+receiver_email=cththemespp-facilitator%40gmail.com
+payer_id=WJ7B29UEC53XU
+invoice=invoice5b10b5555eabe
+reattempt=1
+item_number=2317
+subscr_date=19%3A54%3A37+May+31%2C+2018+PDT
+custom=2713%7C0%7C78%7Ctest%40gmail.com%7Crenew_no%7Csubscription_yes
+charset=windows-1252
+notify_version=3.9
+period1=1+D
+mc_amount1=0.00
+period3=1+M
+mc_amount3=11.00
+ipn_track_id=1d84d681b4f39
+
+IPN Response from Paypal Server:
+ HTTP/1.1 200 OK
+Date: Fri, 01 Jun 2018 02:54:46 GMT
+Server: Apache
+X-Frame-Options: SAMEORIGIN
+Set-Cookie: c9MWDuvPtT9GIMyPc3jwol1VSlO=Bs97ZWN8w4dAa1xYM86j_SzmYcTnhVTJEKZwg6O9Ka_vfCpScVPlbAjiOygJu6bAfJjKJh9Y22f82qBnl9gGIIGUflroFkzT0s7qvxU5u8Pc2DnQhDFyjjNoD4UmEA3Q4oikdkyqdhH2fGl-DvGceCACAo9XSEq6hQyiHfic4XplTx4qFKPYSuHIrT3C_QncgA2GAN1LfkcguEqUkFGRg7TBqkfWAZC_c721SR4XoOvJcf3LqNZpnnnbROnRnO0QnuP5YCtzP57_DPzGZwcZZQT-4b4sYp2RBey6ZL_4op5ICItrDjE-5IZyrC1DsbEWZnEvlZmd7qiwdi7D4scFIXqDKYWKGVW_eOw3oD6DkX2XumVWoGKWRgckmKsY_o6c79yAz-FGGl8N8vg0OXykzX_pOvobV_V4HT0fLBadMuCEsxmjCz_2abQqcy0; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: cookie_check=yes; expires=Mon, 29-May-2028 02:54:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navcmd=_notify-validate; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: navlns=0.0; expires=Sun, 31-May-2020 02:54:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: Apache=10.72.108.11.1527821686402644; path=/; expires=Sun, 24-May-48 02:54:46 GMT
+Vary: Accept-Encoding,User-Agent
+Connection: close
+HTTP_X_PP_AZ_LOCATOR: sandbox.slc
+Paypal-Debug-Id: f52b60de5f077
+Set-Cookie: X-PP-SILOVER=name%3DSANDBOX3.WEB.1%26silo_version%3D1880%26app%3Dappdispatcher%26TIME%3D1991577691%26HTTP_X_PP_AZ_LOCATOR%3Dsandbox.slc; Expires=Fri, 01 Jun 2018 03:24:46 GMT; domain=.paypal.com; path=/; Secure; HttpOnly
+Set-Cookie: X-PP-SILOVER=; Expires=Thu, 01 Jan 1970 00:00:01 GMT
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+Strict-Transport-Security: max-age=63072000
+
+VERIFIED
+New IPN POST Vars from Paypal:
+txn_type=subscr_signup
+subscr_id=I-UTFRLLL1RBN0
+last_name=Buyer
+residence_country=US
+mc_currency=USD
+item_name=Payment for Recurring - Trial subscription plan
+amount1=0.00
+business=cththemespp-facilitator@gmail.com
+amount3=11.00
+recurring=1
+verify_sign=AnNMT7nRteKS2auTkxdsRz9rRvvPAuHhiLzBmw6VtiyOpdQFOevAVGUj
+payer_status=verified
+test_ipn=1
+payer_email=cththemespp-buyer@gmail.com
+first_name=Test
+receiver_email=cththemespp-facilitator@gmail.com
+payer_id=WJ7B29UEC53XU
+invoice=invoice5b10b5555eabe
+reattempt=1
+item_number=2317
+subscr_date=19:54:37 May 31, 2018 PDT
+custom=2713|0|78|test@gmail.com|renew_no|subscription_yes
+charset=windows-1252
+notify_version=3.9
+period1=1 D
+mc_amount1=0.00
+period3=1 M
+mc_amount3=11.00
+ipn_track_id=1d84d681b4f39
+
+
+
+
+
+/// stripe trialling
+[2018-05-31 10:35 UTC] - Event type: plan.created
+[2018-05-31 10:35 UTC] - Event object: {"id":"plan_CxjaDl1a7dezSP","object":"plan","aggregate_usage":null,"amount":1100,"billing_scheme":"per_unit","created":1527762908,"currency":"usd","interval":"month","interval_count":1,"livemode":false,"metadata":[],"name":"Recurring - Trial Stripe product","nickname":"Recurring - Trial","product":"prod_Cxja0DkpCI3bvm","statement_descriptor":null,"tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"}
+[2018-05-31 10:41 UTC] - Customer args: {"email":"contact.cththemes@gmail.com","metadata":{"first_name":"","last_name":"","display_name":"CTHthemes"},"source":"tok_1CXoDeFZdAGAQjnSm56SeK5n"}
+[2018-05-31 10:41 UTC] - Subscription args: {"customer":"cus_Cxjhas4siyf2GZ","items":[{"plan":"plan_CxjaDl1a7dezSP","quantity":1}],"trial_period_days":1,"metadata":{"esb_plan_id":2317,"listing_id":0,"order_id":2705,"user_id":1,"user_email":"contact.cththemes@gmail.com","renew":"no","subscription":"yes","trial_interval":"1","trial_period":"day"}}
+[2018-05-31 10:41 UTC] - Event type: customer.updated
+[2018-05-31 10:41 UTC] - Event object: {"id":"cus_Cxjhas4siyf2GZ","object":"customer","account_balance":0,"created":1527763286,"currency":"usd","default_source":"card_1CXoDeFZdAGAQjnS0INEuOgx","delinquent":false,"description":null,"discount":null,"email":"contact.cththemes@gmail.com","invoice_prefix":"1C231A3","livemode":false,"metadata":{"display_name":"CTHthemes"},"shipping":null,"sources":{"object":"list","data":[{"id":"card_1CXoDeFZdAGAQjnS0INEuOgx","object":"card","address_city":null,"address_country":null,"address_line1":null,"address_line1_check":null,"address_line2":null,"address_state":null,"address_zip":null,"address_zip_check":null,"brand":"Visa","country":"US","customer":"cus_Cxjhas4siyf2GZ","cvc_check":"pass","dynamic_last4":null,"exp_month":2,"exp_year":2022,"fingerprint":"IO8MFauEBQD6KZg7","funding":"credit","last4":"4242","metadata":[],"name":"contact.cththemes@gmail.com","tokenization_method":null}],"has_more":false,"total_count":1,"url":"\/v1\/customers\/cus_Cxjhas4siyf2GZ\/sources"},"subscriptions":{"object":"list","data":[{"id":"sub_Cxjh8aI0ljoyQB","object":"subscription","application_fee_percent":null,"billing":"charge_automatically","billing_cycle_anchor":1527849687,"cancel_at_period_end":false,"canceled_at":null,"created":1527763287,"current_period_end":1527849687,"current_period_start":1527763287,"customer":"cus_Cxjhas4siyf2GZ","days_until_due":null,"discount":null,"ended_at":null,"items":{"object":"list","data":[{"id":"si_CxjhQRoQwMErSD","object":"subscription_item","created":1527763288,"metadata":[],"plan":{"id":"plan_CxjaDl1a7dezSP","object":"plan","aggregate_usage":null,"amount":1100,"billing_scheme":"per_unit","created":1527762908,"currency":"usd","interval":"month","interval_count":1,"livemode":false,"metadata":[],"name":"Recurring - Trial Stripe product","nickname":"Recurring - Trial","product":"prod_Cxja0DkpCI3bvm","statement_descriptor":null,"tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"quantity":1,"subscription":"sub_Cxjh8aI0ljoyQB"}],"has_more":false,"total_count":1,"url":"\/v1\/subscription_items?subscription=sub_Cxjh8aI0ljoyQB"},"livemode":false,"metadata":{"esb_plan_id":"2317","listing_id":"0","order_id":"2705","user_id":"1","user_email":"contact.cththemes@gmail.com","renew":"no","subscription":"yes","trial_interval":"1","trial_period":"day"},"plan":{"id":"plan_CxjaDl1a7dezSP","object":"plan","aggregate_usage":null,"amount":1100,"billing_scheme":"per_unit","created":1527762908,"currency":"usd","interval":"month","interval_count":1,"livemode":false,"metadata":[],"name":"Recurring - Trial Stripe product","nickname":"Recurring - Trial","product":"prod_Cxja0DkpCI3bvm","statement_descriptor":null,"tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"quantity":1,"start":1527763287,"status":"trialing","tax_percent":null,"trial_end":1527849687,"trial_start":1527763287}],"has_more":false,"total_count":1,"url":"\/v1\/customers\/cus_Cxjhas4siyf2GZ\/subscriptions"}}
+[2018-05-31 10:41 UTC] - Event type: customer.created
+[2018-05-31 10:41 UTC] - Event object: {"id":"cus_Cxjhas4siyf2GZ","object":"customer","account_balance":0,"created":1527763286,"currency":null,"default_source":"card_1CXoDeFZdAGAQjnS0INEuOgx","delinquent":false,"description":null,"discount":null,"email":"contact.cththemes@gmail.com","invoice_prefix":"1C231A3","livemode":false,"metadata":{"display_name":"CTHthemes"},"shipping":null,"sources":{"object":"list","data":[{"id":"card_1CXoDeFZdAGAQjnS0INEuOgx","object":"card","address_city":null,"address_country":null,"address_line1":null,"address_line1_check":null,"address_line2":null,"address_state":null,"address_zip":null,"address_zip_check":null,"brand":"Visa","country":"US","customer":"cus_Cxjhas4siyf2GZ","cvc_check":"pass","dynamic_last4":null,"exp_month":2,"exp_year":2022,"fingerprint":"IO8MFauEBQD6KZg7","funding":"credit","last4":"4242","metadata":[],"name":"contact.cththemes@gmail.com","tokenization_method":null}],"has_more":false,"total_count":1,"url":"\/v1\/customers\/cus_Cxjhas4siyf2GZ\/sources"},"subscriptions":{"object":"list","data":[],"has_more":false,"total_count":0,"url":"\/v1\/customers\/cus_Cxjhas4siyf2GZ\/subscriptions"}}
+[2018-05-31 10:41 UTC] - Event type: invoice.created
+[2018-05-31 10:41 UTC] - Event object: {"id":"in_1CXoDjFZdAGAQjnSrFq2OKvm","object":"invoice","amount_due":0,"amount_paid":0,"amount_remaining":0,"application_fee":null,"attempt_count":0,"attempted":true,"billing":"charge_automatically","billing_reason":"subscription_update","charge":null,"closed":true,"currency":"usd","customer":"cus_Cxjhas4siyf2GZ","date":1527763287,"description":null,"discount":null,"due_date":null,"ending_balance":0,"forgiven":false,"lines":{"object":"list","data":[{"id":"sub_Cxjh8aI0ljoyQB","object":"line_item","amount":0,"currency":"usd","description":null,"discountable":true,"livemode":false,"metadata":{"esb_plan_id":"2317","listing_id":"0","order_id":"2705","user_id":"1","user_email":"contact.cththemes@gmail.com","renew":"no","subscription":"yes","trial_interval":"1","trial_period":"day"},"period":{"end":1527849687,"start":1527763287},"plan":{"id":"plan_CxjaDl1a7dezSP","object":"plan","aggregate_usage":null,"amount":1100,"billing_scheme":"per_unit","created":1527762908,"currency":"usd","interval":"month","interval_count":1,"livemode":false,"metadata":[],"name":"Recurring - Trial Stripe product","nickname":"Recurring - Trial","product":"prod_Cxja0DkpCI3bvm","statement_descriptor":null,"tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"proration":false,"quantity":1,"subscription":null,"subscription_item":"si_CxjhQRoQwMErSD","type":"subscription"}],"has_more":false,"total_count":1,"url":"\/v1\/invoices\/in_1CXoDjFZdAGAQjnSrFq2OKvm\/lines"},"livemode":false,"metadata":[],"next_payment_attempt":null,"number":"1C231A3-0001","paid":true,"period_end":1527763287,"period_start":1527763287,"receipt_number":null,"starting_balance":0,"statement_descriptor":null,"subscription":"sub_Cxjh8aI0ljoyQB","subtotal":0,"tax":null,"tax_percent":null,"total":0,"webhooks_delivered_at":null}
+[2018-05-31 10:41 UTC] - Event type: customer.source.created
+[2018-05-31 10:41 UTC] - Event object: {"id":"card_1CXoDeFZdAGAQjnS0INEuOgx","object":"card","address_city":null,"address_country":null,"address_line1":null,"address_line1_check":null,"address_line2":null,"address_state":null,"address_zip":null,"address_zip_check":null,"brand":"Visa","country":"US","customer":"cus_Cxjhas4siyf2GZ","cvc_check":"pass","dynamic_last4":null,"exp_month":2,"exp_year":2022,"fingerprint":"IO8MFauEBQD6KZg7","funding":"credit","last4":"4242","metadata":[],"name":"contact.cththemes@gmail.com","tokenization_method":null}
+[2018-05-31 10:41 UTC] - Event type: invoice.payment_succeeded
+[2018-05-31 10:41 UTC] - Event object: {"id":"in_1CXoDjFZdAGAQjnSrFq2OKvm","object":"invoice","amount_due":0,"amount_paid":0,"amount_remaining":0,"application_fee":null,"attempt_count":0,"attempted":true,"billing":"charge_automatically","billing_reason":"subscription_update","charge":null,"closed":true,"currency":"usd","customer":"cus_Cxjhas4siyf2GZ","date":1527763287,"description":null,"discount":null,"due_date":null,"ending_balance":0,"forgiven":false,"lines":{"object":"list","data":[{"id":"sub_Cxjh8aI0ljoyQB","object":"line_item","amount":0,"currency":"usd","description":null,"discountable":true,"livemode":false,"metadata":{"esb_plan_id":"2317","listing_id":"0","order_id":"2705","user_id":"1","user_email":"contact.cththemes@gmail.com","renew":"no","subscription":"yes","trial_interval":"1","trial_period":"day"},"period":{"end":1527849687,"start":1527763287},"plan":{"id":"plan_CxjaDl1a7dezSP","object":"plan","aggregate_usage":null,"amount":1100,"billing_scheme":"per_unit","created":1527762908,"currency":"usd","interval":"month","interval_count":1,"livemode":false,"metadata":[],"name":"Recurring - Trial Stripe product","nickname":"Recurring - Trial","product":"prod_Cxja0DkpCI3bvm","statement_descriptor":null,"tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"proration":false,"quantity":1,"subscription":null,"subscription_item":"si_CxjhQRoQwMErSD","type":"subscription"}],"has_more":false,"total_count":1,"url":"\/v1\/invoices\/in_1CXoDjFZdAGAQjnSrFq2OKvm\/lines"},"livemode":false,"metadata":[],"next_payment_attempt":null,"number":"1C231A3-0001","paid":true,"period_end":1527763287,"period_start":1527763287,"receipt_number":null,"starting_balance":0,"statement_descriptor":null,"subscription":"sub_Cxjh8aI0ljoyQB","subtotal":0,"tax":null,"tax_percent":null,"total":0,"webhooks_delivered_at":null}
+[2018-05-31 10:41 UTC] - Is membership subscription webhook
+[2018-05-31 10:41 UTC] - Event type: customer.subscription.created
+[2018-05-31 10:41 UTC] - Event object: {"id":"sub_Cxjh8aI0ljoyQB","object":"subscription","application_fee_percent":null,"billing":"charge_automatically","billing_cycle_anchor":1527849687,"cancel_at_period_end":false,"canceled_at":null,"created":1527763287,"current_period_end":1527849687,"current_period_start":1527763287,"customer":"cus_Cxjhas4siyf2GZ","days_until_due":null,"discount":null,"ended_at":null,"items":{"object":"list","data":[{"id":"si_CxjhQRoQwMErSD","object":"subscription_item","created":1527763288,"metadata":[],"plan":{"id":"plan_CxjaDl1a7dezSP","object":"plan","aggregate_usage":null,"amount":1100,"billing_scheme":"per_unit","created":1527762908,"currency":"usd","interval":"month","interval_count":1,"livemode":false,"metadata":[],"name":"Recurring - Trial Stripe product","nickname":"Recurring - Trial","product":"prod_Cxja0DkpCI3bvm","statement_descriptor":null,"tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"quantity":1,"subscription":"sub_Cxjh8aI0ljoyQB"}],"has_more":false,"total_count":1,"url":"\/v1\/subscription_items?subscription=sub_Cxjh8aI0ljoyQB"},"livemode":false,"metadata":{"esb_plan_id":"2317","listing_id":"0","order_id":"2705","user_id":"1","user_email":"contact.cththemes@gmail.com","renew":"no","subscription":"yes","trial_interval":"1","trial_period":"day"},"plan":{"id":"plan_CxjaDl1a7dezSP","object":"plan","aggregate_usage":null,"amount":1100,"billing_scheme":"per_unit","created":1527762908,"currency":"usd","interval":"month","interval_count":1,"livemode":false,"metadata":[],"name":"Recurring - Trial Stripe product","nickname":"Recurring - Trial","product":"prod_Cxja0DkpCI3bvm","statement_descriptor":null,"tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"quantity":1,"start":1527763287,"status":"trialing","tax_percent":null,"trial_end":1527849687,"trial_start":1527763287}
+[2018-05-31 10:41 UTC] - Event type: customer.subscription.trial_will_end
+[2018-05-31 10:41 UTC] - Event object: {"id":"sub_Cxjh8aI0ljoyQB","object":"subscription","application_fee_percent":null,"billing":"charge_automatically","billing_cycle_anchor":1527849687,"cancel_at_period_end":false,"canceled_at":null,"created":1527763287,"current_period_end":1527849687,"current_period_start":1527763287,"customer":"cus_Cxjhas4siyf2GZ","days_until_due":null,"discount":null,"ended_at":null,"items":{"object":"list","data":[{"id":"si_CxjhQRoQwMErSD","object":"subscription_item","created":1527763288,"metadata":[],"plan":{"id":"plan_CxjaDl1a7dezSP","object":"plan","aggregate_usage":null,"amount":1100,"billing_scheme":"per_unit","created":1527762908,"currency":"usd","interval":"month","interval_count":1,"livemode":false,"metadata":[],"name":"Recurring - Trial Stripe product","nickname":"Recurring - Trial","product":"prod_Cxja0DkpCI3bvm","statement_descriptor":null,"tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"quantity":1,"subscription":"sub_Cxjh8aI0ljoyQB"}],"has_more":false,"total_count":1,"url":"\/v1\/subscription_items?subscription=sub_Cxjh8aI0ljoyQB"},"livemode":false,"metadata":{"esb_plan_id":"2317","listing_id":"0","order_id":"2705","user_id":"1","user_email":"contact.cththemes@gmail.com","renew":"no","subscription":"yes","trial_interval":"1","trial_period":"day"},"plan":{"id":"plan_CxjaDl1a7dezSP","object":"plan","aggregate_usage":null,"amount":1100,"billing_scheme":"per_unit","created":1527762908,"currency":"usd","interval":"month","interval_count":1,"livemode":false,"metadata":[],"name":"Recurring - Trial Stripe product","nickname":"Recurring - Trial","product":"prod_Cxja0DkpCI3bvm","statement_descriptor":null,"tiers":null,"tiers_mode":null,"transform_usage":null,"trial_period_days":null,"usage_type":"licensed"},"quantity":1,"start":1527763287,"status":"trialing","tax_percent":null,"trial_end":1527849687,"trial_start":1527763287}
+
+

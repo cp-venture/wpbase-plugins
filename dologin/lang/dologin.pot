@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the DoLogin Security package.
 msgid ""
 msgstr ""
-"Project-Id-Version: DoLogin Security 2.5\n"
+"Project-Id-Version: DoLogin Security 2.6\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dologin\n"
-"POT-Creation-Date: 2020-04-20 15:08:03+00:00\n"
+"POT-Creation-Date: 2020-05-06 14:28:03+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,151 +12,151 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: src/admin.cls.php:71 src/admin.cls.php:79 src/gui.cls.php:138
+#: src/admin.cls.php:65 src/admin.cls.php:72 src/gui.cls.php:131
 msgid "Dologin Security Phone"
 msgstr ""
 
-#: src/admin.cls.php:93
+#: src/admin.cls.php:85
 msgid "Generate Login Link"
 msgstr ""
 
-#: src/admin.cls.php:109 tpl/entry.tpl.php:7 tpl/setting.tpl.php:14
+#: src/admin.cls.php:100 tpl/entry.tpl.php:7 tpl/setting.tpl.php:14
 msgid "Settings"
 msgstr ""
 
-#: src/admin.cls.php:148
+#: src/admin.cls.php:138
 msgid "Options saved successfully!"
 msgstr ""
 
-#: src/cli.cls.php:35
+#: src/cli.cls.php:32
 msgid "Expired"
 msgstr ""
 
-#: src/cli.cls.php:59
+#: src/cli.cls.php:55
 msgid "No related user."
 msgstr ""
 
-#: src/cli.cls.php:82
+#: src/cli.cls.php:77
 msgid "No ID to delete."
 msgstr ""
 
-#: src/f.cls.php:111
+#: src/f.cls.php:104
 msgid "Folder does not exist: %s"
 msgstr ""
 
-#: src/f.cls.php:118
+#: src/f.cls.php:111
 msgid "Can not create folder: %1$s. Error: %2$s"
 msgstr ""
 
-#: src/f.cls.php:124
+#: src/f.cls.php:117
 msgid "Folder is not writable: %s."
 msgstr ""
 
-#: src/f.cls.php:130 src/f.cls.php:134
+#: src/f.cls.php:123 src/f.cls.php:127
 msgid "File %s is not writable."
 msgstr ""
 
-#: src/f.cls.php:141
+#: src/f.cls.php:134
 msgid "Failed to write to %s."
 msgstr ""
 
-#: src/gui.cls.php:117
+#: src/gui.cls.php:111
 msgid "Dynamic Code"
 msgstr ""
 
-#: src/gui.cls.php:280 src/lang.cls.php:65
-msgid "ON"
-msgstr ""
-
-#: src/gui.cls.php:283
+#: src/gui.cls.php:249
 msgid "OFF"
 msgstr ""
 
-#: src/lang.cls.php:37
+#: src/gui.cls.php:250 src/lang.cls.php:60
+msgid "ON"
+msgstr ""
+
+#: src/lang.cls.php:32
 msgid "Please try after %ds."
 msgstr ""
 
-#: src/lang.cls.php:41
+#: src/lang.cls.php:36
 msgid "No Dologin Security phone number set under your profile."
 msgstr ""
 
-#: src/lang.cls.php:45
+#: src/lang.cls.php:40
 msgid "No phone number under this user profile."
 msgstr ""
 
-#: src/lang.cls.php:49
+#: src/lang.cls.php:44
 msgid "Empty username/password."
 msgstr ""
 
-#: src/lang.cls.php:53
+#: src/lang.cls.php:48
 msgid "Your IP is not in the whitelist."
 msgstr ""
 
-#: src/lang.cls.php:57
+#: src/lang.cls.php:52
 msgid "Your IP is in the blacklist."
 msgstr ""
 
-#: src/lang.cls.php:61
+#: src/lang.cls.php:56
 msgid "Too many failed login attempts. Please try later."
 msgstr ""
 
-#: src/lang.cls.php:69
+#: src/lang.cls.php:64
 msgid "%s attempt(s) remaining."
 msgstr ""
 
-#: src/lang.cls.php:73
+#: src/lang.cls.php:68
 msgid "Dynamic code is required."
 msgstr ""
 
-#: src/lang.cls.php:77
+#: src/lang.cls.php:72
 msgid "Dynamic code is not correct."
 msgstr ""
 
-#: src/lang.cls.php:81
+#: src/lang.cls.php:76
 msgid "Please check the reCAPTCHA box."
 msgstr ""
 
-#: src/lang.cls.php:86
+#: src/lang.cls.php:81
 msgid "The secret parameter is missing."
 msgstr ""
 
-#: src/lang.cls.php:90
+#: src/lang.cls.php:85
 msgid "The secret parameter is invalid or malformed."
 msgstr ""
 
-#: src/lang.cls.php:94
+#: src/lang.cls.php:89
 msgid "The response parameter is missing."
 msgstr ""
 
-#: src/lang.cls.php:98
+#: src/lang.cls.php:93
 msgid "The response parameter is invalid or malformed."
 msgstr ""
 
-#: src/lang.cls.php:102
+#: src/lang.cls.php:97
 msgid "The request is invalid or malformed."
 msgstr ""
 
-#: src/lang.cls.php:106
+#: src/lang.cls.php:101
 msgid ""
 "The response is no longer valid: either is too old or has been used "
 "previously."
 msgstr ""
 
-#. #-#-#-#-#  dologin.pot (DoLogin Security 2.5)  #-#-#-#-#
+#. #-#-#-#-#  dologin.pot (DoLogin Security 2.6)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
-#: src/lang.cls.php:114 tpl/entry.tpl.php:15
+#: src/lang.cls.php:109 tpl/entry.tpl.php:15
 msgid "DoLogin Security"
 msgstr ""
 
-#: src/util.cls.php:209
+#: src/util.cls.php:200
 msgid "just now"
 msgstr ""
 
-#: src/util.cls.php:209
+#: src/util.cls.php:200
 msgid "right now"
 msgstr ""
 
-#: src/util.cls.php:211
+#: src/util.cls.php:202
 msgid " %s ago"
 msgstr ""
 

@@ -1,0 +1,480 @@
+string(34) "woocommerce_order_status_completed"
+int(5919)
+string(29) "woocommerce_order_edit_status"
+int(5919)
+string(9) "completed"
+object(WC_Order)#2199 (14) {
+  ["status_transition":protected]=>
+  bool(false)
+  ["data":protected]=>
+  array(28) {
+    ["parent_id"]=>
+    int(0)
+    ["status"]=>
+    string(9) "completed"
+    ["currency"]=>
+    string(3) "GBP"
+    ["version"]=>
+    string(5) "3.3.5"
+    ["prices_include_tax"]=>
+    bool(false)
+    ["date_created"]=>
+    object(WC_DateTime)#2285 (4) {
+      ["utc_offset":protected]=>
+      int(0)
+      ["date"]=>
+      string(26) "2018-06-02 12:01:39.000000"
+      ["timezone_type"]=>
+      int(1)
+      ["timezone"]=>
+      string(6) "+00:00"
+    }
+    ["date_modified"]=>
+    object(WC_DateTime)#2278 (4) {
+      ["utc_offset":protected]=>
+      int(0)
+      ["date"]=>
+      string(26) "2018-06-02 13:04:24.000000"
+      ["timezone_type"]=>
+      int(1)
+      ["timezone"]=>
+      string(6) "+00:00"
+    }
+    ["discount_total"]=>
+    string(1) "0"
+    ["discount_tax"]=>
+    string(1) "0"
+    ["shipping_total"]=>
+    string(4) "0.00"
+    ["shipping_tax"]=>
+    string(1) "0"
+    ["cart_tax"]=>
+    string(1) "0"
+    ["total"]=>
+    string(5) "49.00"
+    ["total_tax"]=>
+    string(1) "0"
+    ["customer_id"]=>
+    int(2)
+    ["order_key"]=>
+    string(22) "wc_order_5b12872301c9a"
+    ["billing"]=>
+    array(11) {
+      ["first_name"]=>
+      string(4) "Test"
+      ["last_name"]=>
+      string(3) "CTH"
+      ["company"]=>
+      string(9) "CTHthemes"
+      ["address_1"]=>
+      string(7) "234 PVD"
+      ["address_2"]=>
+      string(0) ""
+      ["city"]=>
+      string(5) "Hanoi"
+      ["state"]=>
+      string(0) ""
+      ["postcode"]=>
+      string(6) "100000"
+      ["country"]=>
+      string(2) "VN"
+      ["email"]=>
+      string(14) "test@gmail.com"
+      ["phone"]=>
+      string(5) "55555"
+    }
+    ["shipping"]=>
+    array(9) {
+      ["first_name"]=>
+      string(4) "Test"
+      ["last_name"]=>
+      string(3) "CTH"
+      ["company"]=>
+      string(9) "CTHthemes"
+      ["address_1"]=>
+      string(7) "234 PVD"
+      ["address_2"]=>
+      string(0) ""
+      ["city"]=>
+      string(5) "Hanoi"
+      ["state"]=>
+      string(0) ""
+      ["postcode"]=>
+      string(6) "100000"
+      ["country"]=>
+      string(2) "VN"
+    }
+    ["payment_method"]=>
+    string(4) "bacs"
+    ["payment_method_title"]=>
+    string(20) "Direct bank transfer"
+    ["transaction_id"]=>
+    string(0) ""
+    ["customer_ip_address"]=>
+    string(3) "::1"
+    ["customer_user_agent"]=>
+    string(121) "mozilla/5.0 (macintosh; intel mac os x 10_13_4) applewebkit/537.36 (khtml, like gecko) chrome/66.0.3359.181 safari/537.36"
+    ["created_via"]=>
+    string(8) "checkout"
+    ["customer_note"]=>
+    string(0) ""
+    ["date_completed"]=>
+    object(WC_DateTime)#2205 (4) {
+      ["utc_offset":protected]=>
+      int(0)
+      ["date"]=>
+      string(26) "2018-06-02 13:04:24.000000"
+      ["timezone_type"]=>
+      int(1)
+      ["timezone"]=>
+      string(6) "+00:00"
+    }
+    ["date_paid"]=>
+    NULL
+    ["cart_hash"]=>
+    string(32) "9ab9362c98c283df272e8aa7e97918d8"
+  }
+  ["items":protected]=>
+  array(0) {
+  }
+  ["items_to_delete":protected]=>
+  array(0) {
+  }
+  ["cache_group":protected]=>
+  string(6) "orders"
+  ["data_store_name":protected]=>
+  string(5) "order"
+  ["object_type":protected]=>
+  string(5) "order"
+  ["id":protected]=>
+  int(5919)
+  ["changes":protected]=>
+  array(0) {
+  }
+  ["object_read":protected]=>
+  bool(true)
+  ["extra_data":protected]=>
+  array(0) {
+  }
+  ["default_data":protected]=>
+  array(28) {
+    ["parent_id"]=>
+    int(0)
+    ["status"]=>
+    string(0) ""
+    ["currency"]=>
+    string(0) ""
+    ["version"]=>
+    string(0) ""
+    ["prices_include_tax"]=>
+    bool(false)
+    ["date_created"]=>
+    NULL
+    ["date_modified"]=>
+    NULL
+    ["discount_total"]=>
+    int(0)
+    ["discount_tax"]=>
+    int(0)
+    ["shipping_total"]=>
+    int(0)
+    ["shipping_tax"]=>
+    int(0)
+    ["cart_tax"]=>
+    int(0)
+    ["total"]=>
+    int(0)
+    ["total_tax"]=>
+    int(0)
+    ["customer_id"]=>
+    int(0)
+    ["order_key"]=>
+    string(0) ""
+    ["billing"]=>
+    array(11) {
+      ["first_name"]=>
+      string(0) ""
+      ["last_name"]=>
+      string(0) ""
+      ["company"]=>
+      string(0) ""
+      ["address_1"]=>
+      string(0) ""
+      ["address_2"]=>
+      string(0) ""
+      ["city"]=>
+      string(0) ""
+      ["state"]=>
+      string(0) ""
+      ["postcode"]=>
+      string(0) ""
+      ["country"]=>
+      string(0) ""
+      ["email"]=>
+      string(0) ""
+      ["phone"]=>
+      string(0) ""
+    }
+    ["shipping"]=>
+    array(9) {
+      ["first_name"]=>
+      string(0) ""
+      ["last_name"]=>
+      string(0) ""
+      ["company"]=>
+      string(0) ""
+      ["address_1"]=>
+      string(0) ""
+      ["address_2"]=>
+      string(0) ""
+      ["city"]=>
+      string(0) ""
+      ["state"]=>
+      string(0) ""
+      ["postcode"]=>
+      string(0) ""
+      ["country"]=>
+      string(0) ""
+    }
+    ["payment_method"]=>
+    string(0) ""
+    ["payment_method_title"]=>
+    string(0) ""
+    ["transaction_id"]=>
+    string(0) ""
+    ["customer_ip_address"]=>
+    string(0) ""
+    ["customer_user_agent"]=>
+    string(0) ""
+    ["created_via"]=>
+    string(0) ""
+    ["customer_note"]=>
+    string(0) ""
+    ["date_completed"]=>
+    NULL
+    ["date_paid"]=>
+    NULL
+    ["cart_hash"]=>
+    string(0) ""
+  }
+  ["data_store":protected]=>
+  object(WC_Data_Store)#2203 (4) {
+    ["instance":"WC_Data_Store":private]=>
+    object(WC_Order_Data_Store_CPT)#2271 (3) {
+      ["internal_meta_keys":protected]=>
+      array(78) {
+        [0]=>
+        string(10) "_parent_id"
+        [1]=>
+        string(7) "_status"
+        [2]=>
+        string(9) "_currency"
+        [3]=>
+        string(8) "_version"
+        [4]=>
+        string(19) "_prices_include_tax"
+        [5]=>
+        string(13) "_date_created"
+        [6]=>
+        string(14) "_date_modified"
+        [7]=>
+        string(15) "_discount_total"
+        [8]=>
+        string(13) "_discount_tax"
+        [9]=>
+        string(15) "_shipping_total"
+        [10]=>
+        string(13) "_shipping_tax"
+        [11]=>
+        string(9) "_cart_tax"
+        [12]=>
+        string(6) "_total"
+        [13]=>
+        string(10) "_total_tax"
+        [14]=>
+        string(12) "_customer_id"
+        [15]=>
+        string(10) "_order_key"
+        [16]=>
+        string(8) "_billing"
+        [17]=>
+        string(9) "_shipping"
+        [18]=>
+        string(15) "_payment_method"
+        [19]=>
+        string(21) "_payment_method_title"
+        [20]=>
+        string(15) "_transaction_id"
+        [21]=>
+        string(20) "_customer_ip_address"
+        [22]=>
+        string(20) "_customer_user_agent"
+        [23]=>
+        string(12) "_created_via"
+        [24]=>
+        string(14) "_customer_note"
+        [25]=>
+        string(15) "_date_completed"
+        [26]=>
+        string(10) "_date_paid"
+        [27]=>
+        string(10) "_cart_hash"
+        [28]=>
+        string(14) "_customer_user"
+        [29]=>
+        string(10) "_order_key"
+        [30]=>
+        string(15) "_order_currency"
+        [31]=>
+        string(19) "_billing_first_name"
+        [32]=>
+        string(18) "_billing_last_name"
+        [33]=>
+        string(16) "_billing_company"
+        [34]=>
+        string(18) "_billing_address_1"
+        [35]=>
+        string(18) "_billing_address_2"
+        [36]=>
+        string(13) "_billing_city"
+        [37]=>
+        string(14) "_billing_state"
+        [38]=>
+        string(17) "_billing_postcode"
+        [39]=>
+        string(16) "_billing_country"
+        [40]=>
+        string(14) "_billing_email"
+        [41]=>
+        string(14) "_billing_phone"
+        [42]=>
+        string(20) "_shipping_first_name"
+        [43]=>
+        string(19) "_shipping_last_name"
+        [44]=>
+        string(17) "_shipping_company"
+        [45]=>
+        string(19) "_shipping_address_1"
+        [46]=>
+        string(19) "_shipping_address_2"
+        [47]=>
+        string(14) "_shipping_city"
+        [48]=>
+        string(15) "_shipping_state"
+        [49]=>
+        string(18) "_shipping_postcode"
+        [50]=>
+        string(17) "_shipping_country"
+        [51]=>
+        string(15) "_completed_date"
+        [52]=>
+        string(10) "_paid_date"
+        [53]=>
+        string(10) "_edit_lock"
+        [54]=>
+        string(10) "_edit_last"
+        [55]=>
+        string(14) "_cart_discount"
+        [56]=>
+        string(18) "_cart_discount_tax"
+        [57]=>
+        string(15) "_order_shipping"
+        [58]=>
+        string(19) "_order_shipping_tax"
+        [59]=>
+        string(10) "_order_tax"
+        [60]=>
+        string(12) "_order_total"
+        [61]=>
+        string(15) "_payment_method"
+        [62]=>
+        string(21) "_payment_method_title"
+        [63]=>
+        string(15) "_transaction_id"
+        [64]=>
+        string(20) "_customer_ip_address"
+        [65]=>
+        string(20) "_customer_user_agent"
+        [66]=>
+        string(12) "_created_via"
+        [67]=>
+        string(14) "_order_version"
+        [68]=>
+        string(19) "_prices_include_tax"
+        [69]=>
+        string(15) "_date_completed"
+        [70]=>
+        string(10) "_date_paid"
+        [71]=>
+        string(15) "_payment_tokens"
+        [72]=>
+        string(22) "_billing_address_index"
+        [73]=>
+        string(23) "_shipping_address_index"
+        [74]=>
+        string(15) "_recorded_sales"
+        [75]=>
+        string(29) "_recorded_coupon_usage_counts"
+        [76]=>
+        string(29) "_download_permissions_granted"
+        [77]=>
+        string(20) "_order_stock_reduced"
+      }
+      ["meta_type":protected]=>
+      string(4) "post"
+      ["object_id_field_for_meta":protected]=>
+      string(0) ""
+    }
+    ["stores":"WC_Data_Store":private]=>
+    array(20) {
+      ["coupon"]=>
+      string(24) "WC_Coupon_Data_Store_CPT"
+      ["customer"]=>
+      string(22) "WC_Customer_Data_Store"
+      ["customer-download"]=>
+      string(31) "WC_Customer_Download_Data_Store"
+      ["customer-download-log"]=>
+      string(35) "WC_Customer_Download_Log_Data_Store"
+      ["customer-session"]=>
+      string(30) "WC_Customer_Data_Store_Session"
+      ["order"]=>
+      string(23) "WC_Order_Data_Store_CPT"
+      ["order-refund"]=>
+      string(30) "WC_Order_Refund_Data_Store_CPT"
+      ["order-item"]=>
+      string(24) "WC_Order_Item_Data_Store"
+      ["order-item-coupon"]=>
+      string(31) "WC_Order_Item_Coupon_Data_Store"
+      ["order-item-fee"]=>
+      string(28) "WC_Order_Item_Fee_Data_Store"
+      ["order-item-product"]=>
+      string(32) "WC_Order_Item_Product_Data_Store"
+      ["order-item-shipping"]=>
+      string(33) "WC_Order_Item_Shipping_Data_Store"
+      ["order-item-tax"]=>
+      string(28) "WC_Order_Item_Tax_Data_Store"
+      ["payment-token"]=>
+      string(27) "WC_Payment_Token_Data_Store"
+      ["product"]=>
+      string(28) "WCCPT_Product_Data_Store_CPT"
+      ["product-grouped"]=>
+      string(33) "WC_Product_Grouped_Data_Store_CPT"
+      ["product-variable"]=>
+      string(34) "WC_Product_Variable_Data_Store_CPT"
+      ["product-variation"]=>
+      string(35) "WC_Product_Variation_Data_Store_CPT"
+      ["shipping-zone"]=>
+      string(27) "WC_Shipping_Zone_Data_Store"
+      ["webhook"]=>
+      string(21) "WC_Webhook_Data_Store"
+    }
+    ["current_class_name":"WC_Data_Store":private]=>
+    string(23) "WC_Order_Data_Store_CPT"
+    ["object_type":"WC_Data_Store":private]=>
+    string(5) "order"
+  }
+  ["meta_data":protected]=>
+  array(0) {
+  }
+}
+woocommerce_order_edit_status end

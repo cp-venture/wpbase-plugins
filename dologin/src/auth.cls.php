@@ -5,11 +5,9 @@
  * @since 1.0
  */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class Auth extends Instance
-{
+class Auth extends Instance {
 	protected static $_instance;
 
 	/**
@@ -18,8 +16,7 @@ class Auth extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	public function init()
-	{
+	public function init() {
 		add_action( 'login_head', array( $this, 'login_head' ) );
 		add_filter( 'authenticate', array( $this, 'authenticate' ), 2, 3 );
 		// Save phone number for new reg
@@ -50,8 +47,7 @@ class Auth extends Instance
 	 * @since 1.9
 	 * @access public
 	 */
-	public function registration_errors( $errors )
-	{
+	public function registration_errors( $errors ) {
 		if ( Conf::val( 'gg' ) && Conf::val( 'recapt_register' ) ) {
 			try {
 				Captcha::get_instance()->authenticate(); // Need to be before WP auth check
@@ -72,8 +68,7 @@ class Auth extends Instance
 	 * @since 1.9
 	 * @access public
 	 */
-	public function lostpassword_errors( $errors )
-	{
+	public function lostpassword_errors( $errors ) {
 		if ( Conf::val( 'gg' ) && Conf::val( 'recapt_forget' ) ) {
 			try {
 				Captcha::get_instance()->authenticate(); // Need to be before WP auth check
@@ -94,8 +89,7 @@ class Auth extends Instance
 	 * @since 1.8
 	 * @access public
 	 */
-	public function register_new_user( $uid )
-	{
+	public function register_new_user( $uid ) {
 		if ( empty( $_POST[ 'phone_number' ] ) ) {
 			return;
 		}
@@ -116,8 +110,7 @@ class Auth extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	public function login_head()
-	{
+	public function login_head() {
 		global $error;
 
 		if ( defined( 'DOLOGIN_ERR' ) ) {
@@ -149,8 +142,7 @@ class Auth extends Instance
 	 * @since  1.0
 	 * @access private
 	 */
-	private function _has_login_err( $msg_only = false )
-	{
+	private function _has_login_err( $msg_only = false ) {
 		global $wpdb;
 
 		$q = 'SELECT COUNT(*) FROM ' . Data::get_instance()->tb( 'failure' ) . ' WHERE ip = %s AND dateline > %s ';
@@ -186,8 +178,7 @@ class Auth extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	public function authenticate( $user, $username, $password )
-	{
+	public function authenticate( $user, $username, $password ) {
 		if ( empty( $username ) || empty( $password ) ) {
 			defined( 'debug' ) && debug( 'lack_of_u/p' );
 			return $user;
@@ -258,8 +249,7 @@ class Auth extends Instance
 	 * @since  1.2
 	 * @access public
 	 */
-	public function check_xmlrpc()
-	{
+	public function check_xmlrpc() {
 		if ( is_user_logged_in() ) {
 			return;
 		}
@@ -276,8 +266,7 @@ class Auth extends Instance
 	 * @since  1.2
 	 * @access public
 	 */
-	public function xmlrpc_error_msg( $err )
-	{
+	public function xmlrpc_error_msg( $err ) {
 		if ( ! class_exists( 'IXR_Error' ) ) {
 			return $err;
 		}
@@ -303,8 +292,7 @@ class Auth extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	public function wp_login_failed( $user )
-	{
+	public function wp_login_failed( $user ) {
 		global $wpdb;
 
 		$ip = IP::me();
@@ -342,8 +330,7 @@ class Auth extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	private function try_whitelist()
-	{
+	private function try_whitelist() {
 		$list = Conf::val( 'whitelist' );
 		if ( ! $list ) {
 			return true;
@@ -362,8 +349,7 @@ class Auth extends Instance
 	 * @since  1.0
 	 * @access public
 	 */
-	private function try_blacklist()
-	{
+	private function try_blacklist() {
 		$list = Conf::val( 'blacklist' );
 		if ( ! $list ) {
 			return false;

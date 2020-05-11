@@ -5,11 +5,9 @@
  * @since 1.4
  */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class Router extends Instance
-{
+class Router extends Instance {
 	protected static $_instance;
 
 	const NONCE = 'dologin_nonce';
@@ -24,8 +22,7 @@ class Router extends Instance
 	/**
 	 * Init
 	 */
-	public function init()
-	{
+	public function init() {
 		add_action( 'init', array( $this, 'after_user_init' ) );
 	}
 
@@ -34,8 +31,7 @@ class Router extends Instance
 	 *
 	 * @since  1.4
 	 */
-	public function after_user_init()
-	{
+	public function after_user_init() {
 		$action = Router::get_action();
 		switch ( $action ) {
 			case self::ACTION_PSWD:
@@ -56,8 +52,7 @@ class Router extends Instance
 	 *
 	 * @since  1.4
 	 */
-	public static function redirect( $url = false )
-	{
+	public static function redirect( $url = false ) {
 		global $pagenow;
 		$qs = '';
 		if ( ! $url ) {
@@ -95,8 +90,7 @@ class Router extends Instance
 	 *
 	 * @since  1.4
 	 */
-	public static function get_action()
-	{
+	public static function get_action() {
 		if ( ! isset( self::$_action ) ) {
 			self::$_action = false;
 			self::get_instance()->verify_action();
@@ -113,8 +107,7 @@ class Router extends Instance
 	 *
 	 * @since  1.4
 	 */
-	private function verify_action()
-	{
+	private function verify_action() {
 		if ( empty( $_REQUEST[ Router::ACTION ] ) ) {
 			return;
 		}
@@ -146,8 +139,7 @@ class Router extends Instance
 	 *
 	 * @since  1.4
 	 */
-	private function verify_nonce( $action )
-	{
+	private function verify_nonce( $action ) {
 		if ( ! isset( $_REQUEST[ Router::NONCE ] ) || ! wp_verify_nonce( $_REQUEST[ Router::NONCE ], $action ) ) {
 			return false;
 		}
@@ -161,8 +153,7 @@ class Router extends Instance
 	 * @since 1.4
 	 * @access public
 	 */
-	public static function verify_type()
-	{
+	public static function verify_type() {
 		if ( empty( $_REQUEST[ self::TYPE ] ) ) {
 			defined( 'debug' ) && debug( 'no type', 2 ) ;
 			return false ;

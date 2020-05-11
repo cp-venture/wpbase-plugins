@@ -5,11 +5,9 @@
  * @since 1.4
  */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class Pswdless extends Instance
-{
+class Pswdless extends Instance {
 	protected static $_instance;
 
 	const TYPE_GEN = 'gen';
@@ -22,8 +20,7 @@ class Pswdless extends Instance
 	 * Init
 	 * @since  1.4
 	 */
-	public function init()
-	{
+	public function init() {
 		if ( ! empty( $_GET[ 'dologin' ] ) ) {
 			add_action( 'init', array( $this, 'try_login' ) );
 		}
@@ -33,8 +30,7 @@ class Pswdless extends Instance
 	 * Login
 	 * @since  1.4
 	 */
-	public function try_login()
-	{
+	public function try_login() {
 		global $wpdb;
 
 		$username = 'N/A';
@@ -96,8 +92,7 @@ class Pswdless extends Instance
 	 * Note failed login
 	 * @since  1.4
 	 */
-	private function _failed_login( $username )
-	{
+	private function _failed_login( $username ) {
 		do_action( 'wp_login_failed', $username );
 	}
 
@@ -106,8 +101,7 @@ class Pswdless extends Instance
 	 *
 	 * @since  1.4
 	 */
-	private function _expire_link()
-	{
+	private function _expire_link() {
 		global $wpdb;
 
 		$pid = empty( $_GET[ 'dologin_id' ] ) ? 0 : (int) $_GET[ 'dologin_id' ];
@@ -124,8 +118,7 @@ class Pswdless extends Instance
 	 *
 	 * @since  1.4
 	 */
-	private function _onetime_link()
-	{
+	private function _onetime_link() {
 		global $wpdb;
 
 		$pid = empty( $_GET[ 'dologin_id' ] ) ? 0 : (int) $_GET[ 'dologin_id' ];
@@ -142,8 +135,7 @@ class Pswdless extends Instance
 	 *
 	 * @since  1.4
 	 */
-	private function _lock_link()
-	{
+	private function _lock_link() {
 		global $wpdb;
 
 		$pid = empty( $_GET[ 'dologin_id' ] ) ? 0 : (int) $_GET[ 'dologin_id' ];
@@ -160,8 +152,7 @@ class Pswdless extends Instance
 	 *
 	 * @since  1.4.1
 	 */
-	public function del_link( $pid = false )
-	{
+	public function del_link( $pid = false ) {
 		global $wpdb;
 
 		if ( ! $pid ) {
@@ -187,8 +178,7 @@ class Pswdless extends Instance
 	 * @since  1.4
 	 * @access public
 	 */
-	public function gen_link( $src, $uid, $return_url = false )
-	{
+	public function gen_link( $src, $uid, $return_url = false ) {
 		global $wpdb;
 
 		Data::get_instance()->tb_create( 'pswdless' );
@@ -219,8 +209,7 @@ class Pswdless extends Instance
 	 *
 	 * @since  1.4
 	 */
-	public static function handler()
-	{
+	public static function handler() {
 		$instance = self::get_instance();
 
 		$type = Router::verify_type();

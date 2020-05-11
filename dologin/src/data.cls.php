@@ -5,11 +5,9 @@
  * @since 1.0
  */
 namespace dologin;
-
 defined( 'WPINC' ) || exit;
 
-class Data extends Instance
-{
+class Data extends Instance {
 	protected static $_instance;
 
 	private $_db_updater = array(
@@ -28,8 +26,7 @@ class Data extends Instance
 	 * @since  1.0
 	 * @access protected
 	 */
-	protected function __construct()
-	{
+	protected function __construct() {
 	}
 
 	/**
@@ -37,8 +34,7 @@ class Data extends Instance
 	 *
 	 * @since  1.4.1
 	 */
-	public function conf_upgrade()
-	{
+	public function conf_upgrade() {
 		require_once DOLOGIN_DIR . 'src/data.upgrade.func.php' ;
 
 		foreach ( $this->_db_updater as $k => $v ) {
@@ -63,8 +59,7 @@ class Data extends Instance
 	 * @since  1.3
 	 * @access public
 	 */
-	public function tb( $tb )
-	{
+	public function tb( $tb ) {
 		global $wpdb ;
 
 		switch ( $tb ) {
@@ -92,8 +87,7 @@ class Data extends Instance
 	 * @since  1.3
 	 * @access public
 	 */
-	public function tb_exist( $tb )
-	{
+	public function tb_exist( $tb ) {
 		global $wpdb ;
 		return $wpdb->get_var( 'SHOW TABLES LIKE "' . $this->tb( $tb ) . '"' ) ;
 	}
@@ -104,8 +98,7 @@ class Data extends Instance
 	 * @since  1.3
 	 * @access private
 	 */
-	private function _tb_structure( $tb )
-	{
+	private function _tb_structure( $tb ) {
 		return f::read( DOLOGIN_DIR . 'src/data_structure/' . $tb . '.sql' ) ;
 	}
 
@@ -115,8 +108,7 @@ class Data extends Instance
 	 * @since  1.3
 	 * @access public
 	 */
-	public function tb_create( $tb )
-	{
+	public function tb_create( $tb ) {
 		global $wpdb;
 
 		defined( 'debug' ) && debug2( '[Data] Checking table ' . $tb );
@@ -147,8 +139,7 @@ class Data extends Instance
 	 * @since  1.3
 	 * @access public
 	 */
-	public function tb_del( $tb )
-	{
+	public function tb_del( $tb ) {
 		global $wpdb ;
 
 		if ( ! $this->tb_exist( $tb ) ) {
@@ -167,8 +158,7 @@ class Data extends Instance
 	 * @since  1.3
 	 * @access public
 	 */
-	public function tables_create()
-	{
+	public function tables_create() {
 		global $wpdb ;
 
 		$this->tb_create( 'failure' );
@@ -182,8 +172,7 @@ class Data extends Instance
 	 * @since  1.3
 	 * @access public
 	 */
-	public function tables_del()
-	{
+	public function tables_del() {
 		global $wpdb ;
 
 		$this->tb_del( 'failure' );
