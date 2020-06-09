@@ -180,4 +180,13 @@ $website = get_post_meta( get_the_ID(), ESB_META_PREFIX.'website', true );
     </div>
     <?php endif; ?>
 </div>
+<script>
+	$("p").hover(function(){
+  $(this).css("background-color", "yellow");
+  }, function(){
+  $(this).css("background-color", "pink");
+});
+	
+</script>
+
 <?php // }

@@ -29,7 +29,7 @@ else{
                 
                 <div class="clearfix"></div>
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class=" fl-wrap  lws_mobile  tabs-act block_box tabs-wrapper" id="lisfw">
                             <div class="filter-sidebar-header fl-wrap" id="filters-column">
                                 <?php townhub_addons_get_template_part('template-parts/filter/tabs'); ?>
@@ -57,7 +57,7 @@ else{
                         </div>
                         <a class="back-tofilters color2-bg custom-scroll-link fl-wrap" href="#filters-column"><?php _e( 'Back to filters <i class="fas fa-caret-up"></i>', 'townhub-add-ons' ); ?></a>
                     </div>
-                    <div class="col-md-8">
+                    <div class="col-md-9">
                         <!-- list-main-wrap-header-->
                         <div class="list-main-wrap-headers fl-wrap block_box no-vis-shadow list-main-head-normal">
                             <?php townhub_addons_get_template_part( 'template-parts/filter/head' ,'', array('is_fixed'=>false, 'side_filter'=>false) ); ?>                    
